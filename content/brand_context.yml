@@ -1,0 +1,76 @@
+# Stable truth about ChaseDesk. Included (in summarised form) in every generation prompt.
+# Update this when positioning, product, or audience understanding changes.
+
+brand:
+  name: "ChaseDesk"
+  website: "https://chasedesk.app"
+  tagline: "We chase. You close."
+  positioning: "Receipt-chasing autopilot for Xero bookkeeping firms"
+  one_liner: >-
+    ChaseDesk helps Xero bookkeeping firms automatically chase clients for missing
+    receipts: it connects to Xero, detects what's missing, follows up with clients by
+    email and SMS, gives clients a no-login upload link, extracts the documents, and
+    helps post clean entries back to Xero.
+  wedge: "Most receipt tools help after the receipt arrives. ChaseDesk helps get the receipt to arrive."
+  product_role: >-
+    ChaseDesk is the quiet assistant, not the hero. The bookkeeper is the hero. Show
+    ChaseDesk handling the chase so the bookkeeper can close books faster. Never make it
+    sound magical or like a replacement for the bookkeeper.
+  proof_level: "early"        # early | beta_data
+  proof_rules: >-
+    No real customer data yet. Do not invent numbers, percentages, or customer stories.
+    Use qualitative language only. If referring to time saved, say "less time" or "hours
+    back", never an exact figure.
+  approved_proof: []          # when beta data exists, add approved metric strings here
+
+product_facts:
+  - id: pf_001
+    fact: "ChaseDesk connects to Xero and pulls in contacts and uncategorized bank activity."
+  - id: pf_002
+    fact: "Clients upload receipts through a no-login link — no app, no password, no portal."
+  - id: pf_003
+    fact: "ChaseDesk detects which transactions are missing their receipts."
+  - id: pf_004
+    fact: "ChaseDesk follows up with clients automatically by email and SMS, on a cadence, and stops once the receipt is uploaded."
+  - id: pf_005
+    fact: "ChaseDesk extracts (OCRs) uploaded receipts and helps post clean entries back to Xero."
+  - id: pf_006
+    fact: "ChaseDesk shows one dashboard of which clients are currently blocking month-end close."
+  - id: pf_007
+    fact: "ChaseDesk is built specifically for Xero bookkeeping firms, not generic finance teams."
+
+audience_segments:
+  - id: solo_bookkeeper
+    label: "Solo bookkeeper"
+    description: "Runs a one-person bookkeeping practice on Xero, managing roughly 10–40 SMB clients. Time is the constraint."
+    pains:
+      - "manual receipt chasing eats whole afternoons"
+      - "clients reply late, or not at all"
+      - "close work spills into evenings and Sundays"
+      - "no capacity to take on more clients"
+    desired_outcomes:
+      - "faster month-end close"
+      - "less time spent on client follow-up"
+      - "room to take on more clients without hiring"
+  - id: firm_owner_2_20_staff
+    label: "Bookkeeping firm owner (2–20 staff)"
+    description: "Owns a small Xero bookkeeping firm. Cares about team utilization, consistent close quality, and growth without overhiring."
+    pains:
+      - "team time lost to admin and chasing"
+      - "inconsistent month-end close quality across clients"
+      - "juniors stuck doing follow-up instead of real work"
+    desired_outcomes:
+      - "better team utilization"
+      - "more client capacity without hiring"
+      - "predictable close timelines"
+  - id: practice_ops
+    label: "Practice operations lead"
+    description: "Runs operations and workflow inside an accounting or bookkeeping firm. Cares about process, visibility, and removing bottlenecks."
+    pains:
+      - "no clear view of which clients are blocking close"
+      - "chasing is invisible work that derails the schedule"
+      - "every month-end becomes a fire drill"
+    desired_outcomes:
+      - "a clear view of what's blocking close"
+      - "less month-end firefighting"
+      - "a repeatable, boring close process"

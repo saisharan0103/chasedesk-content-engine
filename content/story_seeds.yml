@@ -1,0 +1,104 @@
+# Concrete scenes the model writes FROM. Not topics — situations.
+# Each seed lists which strategies it works with. Add seeds freely; the engine
+# avoids reusing the same seed within SEED_COOLDOWN_DAYS.
+
+seeds:
+  - id: monday_email_queue
+    scene: "It's Monday morning. Before any real work starts, there are 19 reminder emails to send to clients who still haven't sent last month's receipts."
+    pain: "The week starts with admin, not bookkeeping."
+    compatible_strategies: [pain_led_story, identity_reframe, hidden_cost, founder_discovery, before_after_workflow, customer_question]
+
+  - id: month_end_blocked
+    scene: "Month-end close is mostly done. There are 27 uncategorized transactions left in Xero — and almost all of them are missing-receipt problems, not accounting problems."
+    pain: "Close is delayed by paperwork that hasn't arrived, not by hard accounting."
+    compatible_strategies: [pain_led_story, hidden_cost, category_contrast, founder_discovery, before_after_workflow, product_mechanic, customer_question]
+
+  - id: blurry_whatsapp_photo
+    scene: "A client finally responds — with a blurry WhatsApp photo of a crumpled receipt, half of it cut off."
+    pain: "Even when clients reply, the response is barely usable."
+    compatible_strategies: [pain_led_story, no_login_link, founder_discovery]
+
+  - id: receipts_scattered_everywhere
+    scene: "The receipts exist — some in the client's email, some in Dropbox, some in text messages, a few as screenshots. None of them are in one place."
+    pain: "Collecting receipts means hunting across five channels."
+    compatible_strategies: [pain_led_story, no_login_link, category_contrast, founder_discovery]
+
+  - id: shoebox_receipts
+    scene: "The client keeps receipts in a shoebox — or a glovebox — and 'will get to it'."
+    pain: "There is no system on the client's side at all."
+    compatible_strategies: [pain_led_story, identity_reframe, no_login_link, hidden_cost]
+
+  - id: fifth_followup_email
+    scene: "The bookkeeper is writing the fifth 'gentle reminder' email of the month to the same client about the same missing receipts."
+    pain: "Following up is repetitive, awkward, and never-ending."
+    compatible_strategies: [pain_led_story, identity_reframe, product_mechanic, founder_discovery]
+
+  - id: year_end_ghosting
+    scene: "It's year-end. Three clients are still ghosting on a full quarter of receipts, and the deadline is close."
+    pain: "Deadline pressure plus unresponsive clients."
+    compatible_strategies: [pain_led_story, hidden_cost, founder_discovery]
+
+  - id: junior_chasing_chain
+    scene: "A junior is chasing the client. The manager is chasing the junior. Nobody is doing the actual close."
+    pain: "Chasing cascades through the team and stalls real work."
+    compatible_strategies: [hidden_cost, pain_led_story, before_after_workflow, founder_discovery]
+
+  - id: client_says_just_estimate
+    scene: "The client's answer to 'I need that receipt' is 'just use last month's' or 'just estimate it'."
+    pain: "Clients don't take the request seriously, which puts clean books at risk."
+    compatible_strategies: [pain_led_story, identity_reframe, founder_discovery]
+
+  - id: vat_deadline_missing_invoices
+    scene: "A VAT/BAS deadline is looming and supplier invoices are still missing for several transactions."
+    pain: "A compliance deadline is at risk because documents haven't arrived."
+    compatible_strategies: [pain_led_story, hidden_cost, founder_discovery]
+
+  - id: new_client_paperwork_mess
+    scene: "A new client onboards with eight months of mixed-up paperwork — some uploaded, some emailed, most missing."
+    pain: "Onboarding starts with untangling a backlog of missing documents."
+    compatible_strategies: [pain_led_story, before_after_workflow, no_login_link, hidden_cost]
+
+  - id: wrong_document_uploaded
+    scene: "The client finally uploads something — but it's the wrong document: last year's invoice, or a bank statement instead of the receipt."
+    pain: "The follow-up loop restarts even after the client 'did the thing'."
+    compatible_strategies: [pain_led_story, product_mechanic, founder_discovery]
+
+  - id: firm_at_capacity
+    scene: "The firm can't take on the two clients it has lined up — not because the work is hard, but because admin and chasing already eat the day."
+    pain: "Chasing is quietly capping how much the firm can grow."
+    compatible_strategies: [hidden_cost, founder_discovery, before_after_workflow, soft_waitlist_cta]
+
+  - id: same_reminder_eleven_times
+    scene: "The bookkeeper has now drafted essentially the same 'just need those receipts' message eleven times this month, to eleven different clients."
+    pain: "The same low-value message, over and over, by hand."
+    compatible_strategies: [pain_led_story, identity_reframe, product_mechanic, before_after_workflow]
+
+  - id: close_waiting_three_weeks
+    scene: "'We'll close the books once you send the rest' — said three weeks ago. The rest still hasn't arrived."
+    pain: "The close is stuck in limbo, waiting on the client."
+    compatible_strategies: [pain_led_story, hidden_cost, founder_discovery, category_contrast]
+
+  - id: no_one_wants_another_portal
+    scene: "The bookkeeper suggests a client portal. The client's reaction: 'please, not another login'."
+    pain: "Portals add friction the client will never adopt."
+    compatible_strategies: [no_login_link, category_contrast, pain_led_story, founder_discovery]
+
+  - id: sunday_night_catchup
+    scene: "It's Sunday night and the bookkeeper is in the inbox, checking whether anyone replied with the receipts that are blocking three clients' close."
+    pain: "Personal time goes to chasing, not to the actual work."
+    compatible_strategies: [pain_led_story, identity_reframe, hidden_cost]
+
+  - id: dashboard_who_is_blocking
+    scene: "Monday morning. Instead of opening five inboxes and Xero, the bookkeeper opens one screen that shows exactly which clients are blocking close and who needs a nudge today."
+    pain: "Today there's no single view of what's blocking close."
+    compatible_strategies: [before_after_workflow, product_mechanic, no_login_link]
+
+  - id: chasing_is_invisible_work
+    scene: "The plan said close would be done by the 5th. It wasn't — because two days disappeared into chasing receipts, and that time never shows up on any plan."
+    pain: "Chasing is invisible work that silently breaks the schedule."
+    compatible_strategies: [hidden_cost, pain_led_story, founder_discovery, before_after_workflow, customer_question]
+
+  - id: bookkeeper_not_debt_collector
+    scene: "A qualified bookkeeper spends a chunk of every week doing what amounts to debt collection — for a single small parking receipt."
+    pain: "Skilled work is being spent on low-value chasing."
+    compatible_strategies: [identity_reframe, pain_led_story, hidden_cost, founder_discovery]

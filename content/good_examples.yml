@@ -1,0 +1,59 @@
+# Few-shot steering — imitate the TONE and structure, not the literal content.
+# Add the best real performers here after the weekly review.
+
+examples:
+  - id: gx_001
+    text: "Bookkeepers don't lose Sunday nights because accounting is hard.\n\nThey lose them because clients still haven't sent the receipts."
+    strategy: pain_led_story
+    shape: two_part
+    note: "Pain first, product absent, sharp contrast."
+  - id: gx_002
+    text: "Before ChaseDesk:\nOpen Xero. Find missing receipts. Email clients. Wait. Follow up. Check inbox. Repeat.\n\nAfter ChaseDesk:\nOpen one screen. See what's still blocking close."
+    strategy: before_after_workflow
+    shape: list_contrast
+    note: "Concrete manual steps, short 'after', no overselling."
+  - id: gx_003
+    text: "Most receipt tools start too late.\n\nThey help after the client sends the receipt. Bookkeepers know the painful part is getting it sent in the first place."
+    strategy: category_contrast
+    shape: two_part
+    note: "Contrasts the category, names no competitor, no insult."
+  - id: gx_004
+    text: "Month-end didn't get delayed by the accounting.\n\nIt got delayed by 27 receipts sitting between your team and a clean close."
+    strategy: pain_led_story
+    shape: two_part
+    note: "A specific number used as illustration, not a results claim."
+  - id: gx_005
+    text: "You didn't train for years to chase a client five times for one small parking receipt."
+    strategy: identity_reframe
+    shape: one_liner
+    note: "Role reframe, sharp, one beat."
+  - id: gx_006
+    text: "Receipt chasing looks like admin.\n\nIt's actually why you can't take on the two clients you've already got lined up."
+    strategy: hidden_cost
+    shape: two_part
+    note: "Small-looking task, real cost = capacity."
+  - id: gx_007
+    text: "Your client doesn't want another portal.\n\nThey want one link. Click. Upload. Done."
+    strategy: no_login_link
+    shape: two_part
+    note: "Client side first, no-login simplicity."
+  - id: gx_008
+    text: "ChaseDesk follows up with the client until the receipt is in — then it stops.\n\nNo more nagging the ones who already sent theirs."
+    strategy: product_mechanic
+    shape: two_part
+    note: "One mechanic, plainly stated, straight from the product facts."
+  - id: gx_009
+    text: "The more bookkeepers we talk to, the clearer it gets:\n\nthe bottleneck isn't the accounting. It's getting the client to send the thing."
+    strategy: founder_discovery
+    shape: two_part
+    note: "First person, lands on the insight, no invented data."
+  - id: gx_010
+    text: "Xero bookkeepers — what eats more of your month?\n\n1. Categorizing transactions\n2. Chasing clients for the receipts behind them\n3. Reviewing what they finally upload\n4. Explaining the delay to the client"
+    strategy: customer_question
+    shape: question_poll
+    note: "Real question, numbered options, no pitch."
+  - id: gx_011
+    text: "We're opening ChaseDesk to a small group of Xero bookkeeping firms.\n\nIf missing receipts are still slowing your close, we'd like to learn how your month-end actually works."
+    strategy: soft_waitlist_cta
+    shape: two_part
+    note: "Context plus a soft ask, no desperation."

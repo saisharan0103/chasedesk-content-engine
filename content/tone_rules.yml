@@ -1,0 +1,40 @@
+# Voice, formatting, and hard constraints. Summarised into every generation prompt.
+
+voice:
+  - "plain English"
+  - "founder-led, not corporate"
+  - "specific and operational, not generic"
+  - "calm, with an occasional sharp edge"
+  - "bookkeeper-aware — sounds like someone who knows Xero month-end"
+
+avoid:
+  - "generic AI hype ('AI is transforming accounting')"
+  - "corporate SaaS fluff"
+  - "aggressive competitor attacks"
+  - "fake urgency or FOMO"
+  - "fake or unsupported metrics and percentages"
+  - "broetry (one. word. per. line. for. drama.)"
+  - "emoji spam"
+  - "hashtags"
+  - "overpromising or 'magical' language"
+
+formatting:
+  hashtags_allowed: false
+  max_emojis: 0
+  one_idea_per_tweet: true
+  strong_opening_sentence: true
+
+constraints:
+  platform: "X"
+  never_invent:
+    - "customer stories"
+    - "metrics or numbers about ChaseDesk's results"
+    - "features not listed in the product facts"
+    - "competitor claims (pricing, market share, quality)"
+    - "integrations not listed in the product facts"
+  competitor_rule: >-
+    If a competitor is mentioned, contrast workflow categories only. Never use insulting
+    words. Never claim outright superiority without proof.
+
+desired_reader_reaction: "They understand my month-end workflow."
+undesired_reader_reaction: "This is just a SaaS account posting AI marketing."

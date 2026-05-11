@@ -1,0 +1,184 @@
+# The "templates" / "types" the engine generates from.
+# Each strategy entry is a RECIPE for a kind of tweet — not a tweet.
+#   weight     : selection probability (renormalized to sum 1.0 on load and on each weekly re-tune)
+#   min_weight : floor — a strategy is never starved below this before there's real performance signal
+# Re-tune `weight` weekly with `python -m src.review retune`.
+
+shapes:
+  - id: one_liner
+    description: "A single sharp sentence. No line breaks."
+  - id: two_part
+    description: "Two beats: a setup line, a blank line, then a punch line."
+  - id: micro_story
+    description: "Three to five very short lines describing a concrete scene, building to a point."
+  - id: list_contrast
+    description: "Two labelled blocks (e.g. 'Before ChaseDesk:' / 'After ChaseDesk:'), each a few short lines."
+  - id: question_poll
+    description: "A genuine question to the reader, optionally followed by 2–4 numbered options."
+
+strategies:
+  - id: pain_led_story
+    display_name: "Pain-led story"
+    purpose: "Make bookkeepers feel understood; surface the operational pain of manual receipt chasing."
+    weight: 0.25
+    min_weight: 0.05
+    allowed_shapes: [one_liner, two_part, micro_story]
+    cta_default: none
+    allowed_cta_modes: [none, reply_question]
+    hook_types: [operational_pain, time_pain, emotional_pain]
+    compatible_segments: [solo_bookkeeper, firm_owner_2_20_staff, practice_ops]
+    human_review: false
+    prompt_notes: >-
+      Open on the pain, not the product. Describe the bookkeeper's reality concretely.
+      ChaseDesk may appear only briefly at the end as the quiet assistant — or not at all.
+      One idea per tweet.
+    example_ids: { good: [gx_001, gx_004], bad: [bx_001] }
+
+  - id: identity_reframe
+    display_name: "Identity reframe"
+    purpose: "Reframe the bookkeeper's role — they didn't sign up to be a receipt debt collector."
+    weight: 0.08
+    min_weight: 0.04
+    allowed_shapes: [one_liner, two_part]
+    cta_default: none
+    allowed_cta_modes: [none]
+    hook_types: [identity, role_reframe, emotional_pain]
+    compatible_segments: [solo_bookkeeper, firm_owner_2_20_staff]
+    human_review: false
+    prompt_notes: >-
+      Short and punchy. Name what the bookkeeper actually trained for vs. what chasing
+      turns them into. Slightly sharp, never whiny. Two beats maximum.
+    example_ids: { good: [gx_005], bad: [bx_003] }
+
+  - id: before_after_workflow
+    display_name: "Before / after workflow"
+    purpose: "Explain ChaseDesk through workflow contrast — the messy manual loop vs. one dashboard."
+    weight: 0.13
+    min_weight: 0.05
+    allowed_shapes: [list_contrast, two_part]
+    cta_default: none
+    allowed_cta_modes: [none]
+    hook_types: [workflow_contrast]
+    compatible_segments: [solo_bookkeeper, firm_owner_2_20_staff, practice_ops]
+    human_review: false
+    prompt_notes: >-
+      Use a 'Before ChaseDesk:' block of short, concrete manual steps, then an
+      'After ChaseDesk:' block that is noticeably shorter. Do not oversell the 'after'.
+    example_ids: { good: [gx_002], bad: [bx_001] }
+
+  - id: hidden_cost
+    display_name: "Hidden cost of chasing"
+    purpose: "Reframe receipt chasing as a quiet business cost — capacity, close speed, morale."
+    weight: 0.10
+    min_weight: 0.05
+    allowed_shapes: [one_liner, two_part, micro_story]
+    cta_default: none
+    allowed_cta_modes: [none]
+    hook_types: [business_cost, capacity, hidden_cost]
+    compatible_segments: [firm_owner_2_20_staff, practice_ops, solo_bookkeeper]
+    human_review: false
+    prompt_notes: >-
+      Start with how small or invisible the task looks ("looks like admin"), then reveal
+      the real cost: delayed close, eaten capacity, juniors stuck chasing. No fake numbers.
+    example_ids: { good: [gx_006], bad: [bx_002] }
+
+  - id: category_contrast
+    display_name: "Category contrast"
+    purpose: "Position ChaseDesk vs. the 'after the receipt arrives' tools — contrast categories, never attack."
+    weight: 0.09
+    min_weight: 0.04
+    allowed_shapes: [one_liner, two_part, micro_story]
+    cta_default: none
+    allowed_cta_modes: [none]
+    hook_types: [category_contrast, positioning]
+    compatible_segments: [solo_bookkeeper, firm_owner_2_20_staff, practice_ops]
+    human_review: true
+    prompt_notes: >-
+      Contrast the workflow CATEGORY, not the competitor's quality. Allowed: "most receipt
+      tools start after the receipt arrives." Forbidden: insults, "better than everyone",
+      unsupported pricing/market claims. If a competitor is named, use ONLY the supplied
+      approved contrast lines and never any of the forbidden_attacks words.
+    example_ids: { good: [gx_003], bad: [bx_004] }
+
+  - id: no_login_link
+    display_name: "No-login upload link"
+    purpose: "Show client-side simplicity — no app, no portal, no password, just one link."
+    weight: 0.09
+    min_weight: 0.04
+    allowed_shapes: [one_liner, two_part, micro_story]
+    cta_default: none
+    allowed_cta_modes: [none]
+    hook_types: [client_simplicity, friction]
+    compatible_segments: [solo_bookkeeper, firm_owner_2_20_staff, practice_ops]
+    human_review: false
+    prompt_notes: >-
+      The SMB client does not want another portal. They want one link: click, upload, done.
+      Frame from the client's side first, then what that means for the bookkeeper.
+    example_ids: { good: [gx_007], bad: [bx_005] }
+
+  - id: product_mechanic
+    display_name: "Product mechanic"
+    purpose: "Explain ONE concrete ChaseDesk mechanic crisply — one fact, one promise."
+    weight: 0.07
+    min_weight: 0.03
+    allowed_shapes: [one_liner, two_part, micro_story]
+    cta_default: none
+    allowed_cta_modes: [none, soft_waitlist]
+    hook_types: [product_explainer, mechanic]
+    compatible_segments: [solo_bookkeeper, firm_owner_2_20_staff, practice_ops]
+    human_review: false
+    prompt_notes: >-
+      Pick exactly one mechanic from the product facts (e.g. "follows up until it's in,
+      then stops" or "missing receipt → matched Xero entry"). Explain it plainly. Do not
+      mention any feature that is not in the product facts. No magic language.
+    example_ids: { good: [gx_008], bad: [bx_002] }
+
+  - id: founder_discovery
+    display_name: "Founder / discovery observation"
+    purpose: "A first-person founder or customer-discovery insight about the real bottleneck."
+    weight: 0.10
+    min_weight: 0.05
+    allowed_shapes: [one_liner, two_part, micro_story]
+    cta_default: none
+    allowed_cta_modes: [none, reply_question]
+    hook_types: [founder_pov, discovery]
+    compatible_segments: [solo_bookkeeper, firm_owner_2_20_staff, practice_ops]
+    human_review: false
+    prompt_notes: >-
+      First person ("the more bookkeepers we talk to...", "talked to a bunch of Xero firms
+      this month..."). Land on the insight: the accounting isn't the bottleneck — client
+      responsiveness is. Do not invent specific customer stories or numbers.
+    example_ids: { good: [gx_009], bad: [bx_003] }
+
+  - id: customer_question
+    display_name: "Customer discovery question"
+    purpose: "A genuine question or mini-poll to bookkeepers, designed to get replies."
+    weight: 0.05
+    min_weight: 0.03
+    allowed_shapes: [question_poll]
+    cta_default: reply_question
+    allowed_cta_modes: [reply_question]
+    hook_types: [question]
+    compatible_segments: [solo_bookkeeper, firm_owner_2_20_staff, practice_ops]
+    human_review: false
+    prompt_notes: >-
+      Ask one real question a bookkeeper would have an opinion on. Optionally add 2–4
+      numbered options. No product pitch. The goal is replies, not clicks.
+    example_ids: { good: [gx_010], bad: [bx_006] }
+
+  - id: soft_waitlist_cta
+    display_name: "Soft waitlist CTA"
+    purpose: "Calm, non-desperate invitation to the waitlist for Xero firms still chasing manually."
+    weight: 0.04
+    min_weight: 0.02
+    allowed_shapes: [two_part, micro_story]
+    cta_default: soft_waitlist
+    allowed_cta_modes: [soft_waitlist]
+    hook_types: [soft_cta]
+    compatible_segments: [solo_bookkeeper, firm_owner_2_20_staff, practice_ops]
+    human_review: true
+    prompt_notes: >-
+      Brief context (the manual-chasing reality), then a soft CTA only if it reads
+      naturally — e.g. "we're opening access in batches to Xero firms still doing this by
+      hand." Never desperate, never hypey. One soft ask, maximum.
+    example_ids: { good: [gx_011], bad: [bx_007] }

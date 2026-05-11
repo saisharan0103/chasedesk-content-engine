@@ -1,0 +1,93 @@
+# Used to UNDERSTAND the category and contrast cleanly — never to copy or attack.
+# Rule: contrast the workflow CATEGORY, not the competitor's quality.
+
+competitors:
+  - id: dext
+    name: "Dext"
+    category: "receipt capture / bookkeeping automation"
+    positioning_summary: "Automate receipt and invoice processing; high-accuracy OCR; sync to accounting software."
+    chase_desk_contrast: "Dext helps after receipts arrive. ChaseDesk helps get the receipt to arrive."
+    safe_contrast_angles:
+      - "Most receipt tools start after the client has already sent the receipt."
+      - "OCR isn't the bottleneck; client responsiveness is."
+    forbidden_attacks: ["outdated", "useless", "inferior", "bad", "broken"]
+  - id: hubdoc
+    name: "Hubdoc"
+    category: "document collection and storage (Xero-owned)"
+    positioning_summary: "Capture and store bills/receipts, extract data, sync with Xero."
+    chase_desk_contrast: "Hubdoc stores and extracts documents. ChaseDesk chases the missing ones before close."
+    safe_contrast_angles:
+      - "Storage is useful, but the missing receipt still has to be collected first."
+    forbidden_attacks: ["outdated", "useless", "inferior"]
+  - id: autoentry
+    name: "AutoEntry"
+    category: "OCR / data entry automation (Sage-owned)"
+    positioning_summary: "Automate data entry of bills, invoices, receipts, and bank statements into accounting software."
+    chase_desk_contrast: "Data entry automation helps once documents are available; ChaseDesk handles the earlier bottleneck — getting them in."
+    safe_contrast_angles:
+      - "Data entry automation helps after the document arrives."
+    forbidden_attacks: ["outdated", "useless", "inferior"]
+  - id: datamolino
+    name: "Datamolino"
+    category: "invoice/receipt OCR and Xero/QBO sync"
+    positioning_summary: "'Never type an invoice again' — line-item extraction, approvals, sync to Xero/QBO."
+    chase_desk_contrast: "'Never type an invoice again' is strong. ChaseDesk's version: never chase a receipt again."
+    safe_contrast_angles:
+      - "Extraction tools assume the document already showed up."
+    forbidden_attacks: ["outdated", "useless", "inferior"]
+  - id: apron
+    name: "Apron"
+    category: "payments, approvals, receipt capture, accountant workflow"
+    positioning_summary: "Payments + invoice capture + approvals + reconciliation; modern brand; mentions auto-chasing receipts."
+    chase_desk_contrast: "For Apron, chasing receipts is one feature alongside payments. ChaseDesk is built around the chase, for Xero firms."
+    safe_contrast_angles:
+      - "Receipt chasing as one feature inside a payments tool, vs. a tool built around the chase."
+    forbidden_attacks: ["outdated", "useless", "inferior"]
+  - id: ezzybills
+    name: "EzzyBills"
+    category: "bill/receipt capture, Xero marketplace"
+    positioning_summary: "Capture bills/receipts, extract line items, code expenses, manage approvals, sync job costs."
+    chase_desk_contrast: "EzzyBills processes what arrives. ChaseDesk gets the missing receipt to arrive."
+    safe_contrast_angles:
+      - "Capture tools start once the receipt is already in hand."
+    forbidden_attacks: ["outdated", "useless", "inferior"]
+  - id: client_hub
+    name: "Client Hub"
+    category: "practice management + client portal"
+    positioning_summary: "Client portal, automated client requests/follow-ups, workflow unblocking."
+    chase_desk_contrast: "Client Hub is a broad client portal. ChaseDesk is narrower — missing receipts in Xero, and no portal for the client to learn."
+    safe_contrast_angles:
+      - "Broad client portals vs. one no-login upload link for the SMB client."
+    forbidden_attacks: ["outdated", "useless", "inferior"]
+  - id: financial_cents
+    name: "Financial Cents"
+    category: "practice management + client tasks/requests"
+    positioning_summary: "'Stop chasing clients for docs' — automated email/SMS reminders, client portal, workflow."
+    chase_desk_contrast: "Financial Cents chases for any document across the whole practice. ChaseDesk specializes in missing receipts for Xero bookkeeping and posts clean entries back."
+    safe_contrast_angles:
+      - "General document chasing vs. Xero missing-receipt chasing that ends in a clean entry."
+    forbidden_attacks: ["outdated", "useless", "inferior"]
+  - id: taxdome
+    name: "TaxDome"
+    category: "accounting practice platform + client portal"
+    positioning_summary: "Client portal, document upload, e-signatures, messaging, automated reminders."
+    chase_desk_contrast: "TaxDome gives clients a full portal. ChaseDesk gives the SMB client a single no-login upload link."
+    safe_contrast_angles:
+      - "A heavy client portal vs. one link: click, upload, done."
+    forbidden_attacks: ["outdated", "useless", "inferior"]
+  - id: karbon
+    name: "Karbon"
+    category: "practice management, workflow, AI"
+    positioning_summary: "Workflow, client communication, AI, reports; premium B2B positioning."
+    chase_desk_contrast: "Karbon manages the whole practice workflow. ChaseDesk owns one painful slice — missing receipts before close."
+    safe_contrast_angles:
+      - "A whole-practice workflow platform vs. a focused fix for the receipt bottleneck."
+    forbidden_attacks: ["outdated", "useless", "inferior"]
+
+# Used by the category_contrast strategy when no single competitor is named.
+category_map: >-
+  Dext captures and processes receipts. Hubdoc stores and extracts. AutoEntry, Datamolino
+  and EzzyBills do OCR and data entry. Client Hub is a broad client portal. Financial Cents
+  is broad client tasks. TaxDome is a client portal. Karbon is practice management. ChaseDesk
+  is the receipt-chasing autopilot for Xero firms: it gets the missing receipt to arrive,
+  then extracts it and helps post a clean entry to Xero.

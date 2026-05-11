@@ -1,0 +1,24 @@
+# Anti-examples — never produce anything like these. Add recurring failure patterns here.
+
+examples:
+  - id: bx_001
+    text: "AI is revolutionizing bookkeeping workflows for modern firms. 🚀"
+    rejection_reason: "generic AI hype; no ICP pain; no specific workflow; emoji"
+  - id: bx_002
+    text: "ChaseDesk saves 90% of your time instantly. A real game-changer for accountants!"
+    rejection_reason: "fake metric; banned phrase 'game-changer'; overpromising"
+  - id: bx_003
+    text: "Stop wasting your life. Automate everything. Win at accounting."
+    rejection_reason: "vague; no ICP detail; hypey; no concrete pain"
+  - id: bx_004
+    text: "Dext is outdated and honestly kind of useless compared to what we built."
+    rejection_reason: "aggressive competitor attack; forbidden words; unsupported superiority"
+  - id: bx_005
+    text: "Our revolutionary portal will transform how your clients interact with your firm forever."
+    rejection_reason: "corporate fluff; 'revolutionary'; also off-brand — ChaseDesk is no-portal"
+  - id: bx_006
+    text: "Do you like saving time? 👀 Then you'll LOVE what we built. Link in bio. #accounting #AI #bookkeeping"
+    rejection_reason: "spammy; hashtags; emoji; vague; CTA gimmick"
+  - id: bx_007
+    text: "LAST CHANCE to join the waitlist!!! Spots filling FAST!!! Don't miss out!!!"
+    rejection_reason: "fake urgency; desperate; not founder-led"

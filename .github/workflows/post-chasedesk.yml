@@ -1,0 +1,61 @@
+name: ChaseDesk daily content
+
+# Runs once each morning, generates + quality-checks tweets, and schedules them
+# in Typefully (Typefully fires them at the exact randomized times). The cron is
+# only a trigger — it does not need to be precise.
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # 03:00 UTC ≈ 08:30 IST
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Run in dry-run mode (don't send anything to Typefully)"
+        type: choice
+        options: ["true", "false"]
+        default: "true"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: chasedesk-content
+  cancel-in-progress: false
+
+jobs:
+  generate-and-schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Generate & schedule
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o' }}
+          TYPEFULLY_API_KEY: ${{ secrets.TYPEFULLY_API_KEY }}
+          # workflow_dispatch input wins; otherwise repo variable DRY_RUN; otherwise 'true'
+          DRY_RUN: ${{ inputs.dry_run || vars.DRY_RUN || 'true' }}
+          TIMEZONE: ${{ vars.TIMEZONE || 'Asia/Kolkata' }}
+          POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '3' }}
+          POST_WINDOW_START: ${{ vars.POST_WINDOW_START || '09:00' }}
+          POST_WINDOW_END: ${{ vars.POST_WINDOW_END || '21:00' }}
+          MIN_GAP_MINUTES: ${{ vars.MIN_GAP_MINUTES || '180' }}
+          CHAR_LIMIT: ${{ vars.CHAR_LIMIT || '240' }}
+          HUMAN_REVIEW_COMPETITOR_POSTS: ${{ vars.HUMAN_REVIEW_COMPETITOR_POSTS || 'true' }}
+        run: python -m src.orchestrator
+
+      - name: Commit logs
+        if: always()
+        run: |
+          git config user.name "chasedesk-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add logs/
+          git diff --cached --quiet || git commit -m "logs: $(date -u +%Y-%m-%d) run"
+          git push

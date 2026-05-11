@@ -1,0 +1,14 @@
+# secrets
+.env
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# os
+.DS_Store
+Thumbs.db
