@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2026-05-12",
+    "posted_for": "2026-05-13",
+    "text": "Your client doesn't want another portal. They want one link. Click. Upload. Done.",
+    "seed_id": "month_end_blocked",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-05-12",
+    "posted_for": "2026-05-13",
+    "text": "Bookkeepers don't lose evenings because accounting is hard. They lose them chasing receipts that never arrived.",
+    "seed_id": "wrong_document_uploaded",
+    "strategy_id": "product_mechanic"
+  }
+]

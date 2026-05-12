@@ -1,0 +1,29 @@
+[
+  {
+    "slot": 1,
+    "posted_for": "2026-05-13",
+    "scheduled_local": "2026-05-13 12:38 IST",
+    "scheduled_utc": "2026-05-13T07:08:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "micro_story",
+    "segment": "practice_ops",
+    "seed_id": "receipts_scattered_everywhere",
+    "competitor_id": null,
+    "hook_type": "category_contrast",
+    "tweet_text": "Bookkeepers don't lose evenings because accounting is hard. They lose them chasing receipts that never arrived.",
+    "character_count": 111,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "stub",
+    "source_ids": [],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]
