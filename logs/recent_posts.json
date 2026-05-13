@@ -12,5 +12,26 @@
     "text": "Bookkeepers don't lose evenings because accounting is hard. They lose them chasing receipts that never arrived.",
     "seed_id": "wrong_document_uploaded",
     "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-05-13",
+    "posted_for": "2026-05-14",
+    "text": "Chasing cascades through the team and stalls real work.\n\nMost receipt tools help after the receipt arrives. ChaseDesk helps get it to arrive.",
+    "seed_id": "junior_chasing_chain",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-05-13",
+    "posted_for": "2026-05-14",
+    "text": "The week starts with admin, not bookkeeping.\n\nMost receipt tools help after the receipt arrives. ChaseDesk helps get it to arrive.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-05-13",
+    "posted_for": "2026-05-14",
+    "text": "Even when clients reply, the response is barely usable.\n\nMost receipt tools help after the receipt arrives. ChaseDesk helps get it to arrive.",
+    "seed_id": "blurry_whatsapp_photo",
+    "strategy_id": "founder_discovery"
   }
 ]
