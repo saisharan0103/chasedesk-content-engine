@@ -1,0 +1,29 @@
+[
+  {
+    "slot": 0,
+    "posted_for": "2026-05-15",
+    "scheduled_local": "2026-05-15 09:07 IST",
+    "scheduled_utc": "2026-05-15T03:37:00Z",
+    "status": "review_queue",
+    "strategy": "soft_waitlist_cta",
+    "strategy_name": "Soft waitlist CTA",
+    "shape": "two_part",
+    "segment": "solo_bookkeeper",
+    "seed_id": "firm_at_capacity",
+    "competitor_id": null,
+    "hook_type": "soft_cta",
+    "tweet_text": "Chasing is quietly capping how much the firm can grow.\n\nMost receipt tools help after the receipt arrives. ChaseDesk helps get it to arrive.",
+    "character_count": 140,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "stub",
+    "source_ids": [],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]
