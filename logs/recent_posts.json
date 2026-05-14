@@ -47,5 +47,19 @@
     "text": "Personal time goes to chasing, not to the actual work.\n\nMost receipt tools help after the receipt arrives. ChaseDesk helps get it to arrive.",
     "seed_id": "sunday_night_catchup",
     "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-05-14",
+    "posted_for": "2026-05-15",
+    "text": "ChaseDesk automatically follows up on missing Xero receipts by email and SMS, freeing you from the chase once they're in.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-05-14",
+    "posted_for": "2026-05-15",
+    "text": "'We'll close the books once you send the rest,' is still echoing weeks later. ChaseDesk can move things along.",
+    "seed_id": "close_waiting_three_weeks",
+    "strategy_id": "founder_discovery"
   }
 ]
