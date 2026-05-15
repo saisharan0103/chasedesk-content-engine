@@ -61,5 +61,26 @@
     "text": "'We'll close the books once you send the rest,' is still echoing weeks later. ChaseDesk can move things along.",
     "seed_id": "close_waiting_three_weeks",
     "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-05-15",
+    "posted_for": "2026-05-16",
+    "text": "Every follow-up email feels like déjà vu. You've already sent four, and the receipts are still out there. A never-ending loop of reminders and frustration.",
+    "seed_id": "fifth_followup_email",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-05-15",
+    "posted_for": "2026-05-16",
+    "text": "Before ChaseDesk:\nChase clients for receipts. Get nowhere. Stay late fixing books.\n\nAfter ChaseDesk:\nReceipts arrive with less effort. Evening saved.",
+    "seed_id": "same_reminder_eleven_times",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-05-15",
+    "posted_for": "2026-05-16",
+    "text": "Every month-end, you hear \"just use last month's receipts.\"\n\nChaseDesk ensures you get the needed receipts, not guesses.",
+    "seed_id": "client_says_just_estimate",
+    "strategy_id": "identity_reframe"
   }
 ]
