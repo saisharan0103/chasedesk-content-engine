@@ -93,7 +93,11 @@ def run(
         rng=rng,
     )
 
-    tf = TypefullyClient(config.typefully_api_key, dry_run=config.dry_run)
+    tf = TypefullyClient(
+        config.typefully_api_key,
+        social_set_id=config.typefully_social_set_id or None,
+        dry_run=config.dry_run,
+    )
     entries: list[RunEntry] = []
     used_seed_ids: set[str] = set(cooldown_seed_ids)
 
@@ -174,19 +178,21 @@ def run(
 
         if result.needs_human_review:
             status = "review_queue"
-            draft_id = share_url = None
+            draft_id = share_url = x_url = None
         elif config.dry_run:
             status = "dry_run"
-            draft_id = share_url = None
+            draft_id = share_url = x_url = None
         else:
             try:
                 resp = tf.create_draft(text, schedule_date=scheduled_utc)
                 draft_id = resp.get("id")
                 share_url = resp.get("share_url")
+                # x_published_url is null until the draft publishes; analytics_sync backfills it later
+                x_url = resp.get("x_published_url")
                 status = "scheduled"
             except TypefullyError as exc:
                 status = "skipped"
-                draft_id = share_url = None
+                draft_id = share_url = x_url = None
                 result.reasons.append(f"typefully error: {exc}")
                 print(f"[x] slot {slot + 1}: Typefully error - {exc}")
 
@@ -214,6 +220,7 @@ def run(
             failure_reasons=[r for r in result.reasons] if status == "skipped" else [],
             typefully_draft_id=draft_id,
             typefully_share_url=share_url,
+            x_published_url=x_url,
         )
         entries.append(entry)
 

@@ -52,6 +52,7 @@ _BASE_COLUMNS = [
     "risk_flags",
     "typefully_draft_id",
     "typefully_share_url",
+    "x_published_url",  # v2: live X URL, filled in by analytics_sync after publish
     "failure_reasons",
     "tweet_text",
 ]
@@ -83,6 +84,7 @@ class RunEntry:
     failure_reasons: list[str] = field(default_factory=list)
     typefully_draft_id: str | None = None
     typefully_share_url: str | None = None
+    x_published_url: str | None = None
 
 
 # --------------------------------------------------------------------------- #
@@ -166,7 +168,9 @@ def write_run_log(logs_dir: Path, run_date: date, *, target_day: date, entries: 
         if entry.failure_reasons:
             lines.append(f"- Failure reasons: {', '.join(entry.failure_reasons)}")
         if entry.typefully_draft_id or entry.typefully_share_url:
-            lines.append(f"- Typefully: id={entry.typefully_draft_id} url={entry.typefully_share_url}")
+            lines.append(f"- Typefully: id={entry.typefully_draft_id} share={entry.typefully_share_url}")
+        if entry.x_published_url:
+            lines.append(f"- Live tweet: {entry.x_published_url}")
         lines.append("")
         if entry.tweet_text:
             lines.append("```")
@@ -182,9 +186,32 @@ def write_run_log(logs_dir: Path, run_date: date, *, target_day: date, entries: 
 # --------------------------------------------------------------------------- #
 # metrics CSV (one row per slot; metric columns left blank for later backfill)
 # --------------------------------------------------------------------------- #
+def _migrate_csv_header(path: Path, header: list[str]) -> None:
+    """If the existing CSV uses an older header, rewrite it to match `header`
+    (missing cells become empty). One-shot, idempotent."""
+    if not path.exists():
+        return
+    with path.open("r", newline="", encoding="utf-8") as fh:
+        reader = csv.reader(fh)
+        try:
+            existing = next(reader)
+        except StopIteration:
+            return
+        if existing == header:
+            return
+        old_rows = list(reader)
+    with path.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=header)
+        writer.writeheader()
+        for row in old_rows:
+            row_dict = dict(zip(existing, row))
+            writer.writerow({col: row_dict.get(col, "") for col in header})
+
+
 def append_metrics(logs_dir: Path, run_date: date, entries: list[RunEntry]) -> Path:
     ensure_logs_dir(logs_dir)
     path = Path(logs_dir) / METRICS_FILE
+    _migrate_csv_header(path, METRICS_HEADER)
     new_file = not path.exists()
     with path.open("a", newline="", encoding="utf-8") as fh:
         writer = csv.DictWriter(fh, fieldnames=METRICS_HEADER)
@@ -214,6 +241,7 @@ def append_metrics(logs_dir: Path, run_date: date, entries: list[RunEntry]) -> P
                 "risk_flags": ";".join(entry.risk_flags),
                 "typefully_draft_id": entry.typefully_draft_id or "",
                 "typefully_share_url": entry.typefully_share_url or "",
+                "x_published_url": entry.x_published_url or "",
                 "failure_reasons": " | ".join(entry.failure_reasons),
                 "tweet_text": (entry.tweet_text or "").replace("\n", "\\n"),
             }

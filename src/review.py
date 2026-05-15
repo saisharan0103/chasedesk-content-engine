@@ -1,10 +1,13 @@
-"""Operator CLI: work the human-review queue, and re-tune strategy weights weekly.
+"""Operator CLI: work the human-review queue, re-tune strategy weights weekly,
+and sync post URLs + analytics back into metrics.csv.
 
 Usage:
   python -m src.review list                       # show pending review items
   python -m src.review approve <date> <index>     # schedule a queued tweet to Typefully
   python -m src.review reject  <date> <index> "reason"
   python -m src.review retune                     # propose new strategy weights from metrics.csv
+  python -m src.review sync-analytics             # backfill x_published_url + metrics from Typefully
+  python -m src.review whoami                     # show your Typefully social sets (for env var)
 """
 
 from __future__ import annotations
@@ -14,6 +17,7 @@ import json
 import sys
 from pathlib import Path
 
+from .analytics_sync import sync_metrics
 from .config import load_config
 from .content_loader import load_knowledge_base
 from .logging_utils import METRICS_FILE, REVIEW_DIR
@@ -209,8 +213,49 @@ def main(argv: list[str] | None = None) -> int:
     if cmd == "retune":
         blend = float(rest[0]) if rest else 0.5
         return cmd_retune(logs_dir, blend=blend)
+    if cmd == "sync-analytics":
+        return cmd_sync_analytics()
+    if cmd == "whoami":
+        return cmd_whoami()
     print(__doc__)
     return 1
+
+
+def cmd_sync_analytics() -> int:
+    config = load_config()
+    if not config.typefully_api_key:
+        raise SystemExit("TYPEFULLY_API_KEY not set")
+    summary = sync_metrics(config)
+    print(
+        f"matched {summary['rows_matched']} / {summary['rows_total']} rows, "
+        f"updated {summary['rows_updated']} (-> {summary['metrics_path']})"
+    )
+    return 0
+
+
+def cmd_whoami() -> int:
+    config = load_config()
+    if not config.typefully_api_key:
+        raise SystemExit("TYPEFULLY_API_KEY not set")
+    client = TypefullyClient(
+        config.typefully_api_key,
+        social_set_id=config.typefully_social_set_id or None,
+        dry_run=False,
+    )
+    try:
+        sets = client.list_social_sets()
+    except TypefullyError as exc:
+        raise SystemExit(f"Typefully error: {exc}")
+    if not sets:
+        print("no social sets on this account")
+        return 0
+    print("Available social sets:")
+    for s in sets:
+        sid = s.get("id") or s.get("social_set_id")
+        name = s.get("name") or s.get("title") or "(unnamed)"
+        print(f"  id={sid}  name={name}")
+    print("\nAdd the id you want into .env as: TYPEFULLY_SOCIAL_SET_ID=<id>")
+    return 0
 
 
 if __name__ == "__main__":

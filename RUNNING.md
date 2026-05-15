@@ -73,6 +73,28 @@ python -m src.review approve 2026-05-12 0           # schedule item #0 to Typefu
 python -m src.review reject  2026-05-12 1 "too salesy"
 ```
 
+## Typefully (v2 API)
+
+The client talks to the Typefully **v2** API. Two one-time setup steps:
+
+1. **API key** — Typefully → Settings → API → copy into `.env` as `TYPEFULLY_API_KEY`.
+2. **Social set id** — leave `TYPEFULLY_SOCIAL_SET_ID` blank to auto-discover (uses
+   your first social set), or run `python -m src.review whoami` to see all of them
+   and paste the right id into `.env`.
+
+After a tweet publishes, sync the live X URL + engagement metrics back into
+`logs/metrics.csv`:
+
+```bash
+python -m src.review sync-analytics
+```
+
+It calls `GET /v2/social-sets/{id}/analytics/x/posts`, matches each post by
+`typefully_draft_id`, and fills `x_published_url`, `impressions`, `likes`,
+`replies` (X comments), `reposts` (X shares), `bookmarks` (X saves),
+`profile_clicks`, and `url_clicks`. Idempotent — already-filled cells are left
+alone. Run it weekly before `retune`.
+
 ## The weekly loop ("double down on what works")
 
 1. After each posting day, the GitHub Action commits `logs/`. Once posts have run,

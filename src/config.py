@@ -49,8 +49,9 @@ class Config:
     openai_api_key: str = field(default_factory=lambda: os.getenv("OPENAI_API_KEY", "").strip())
     openai_model: str = field(default_factory=lambda: os.getenv("OPENAI_MODEL", "gpt-4o").strip())
 
-    # Typefully
+    # Typefully (v2 API needs a social_set_id; leave blank to auto-discover)
     typefully_api_key: str = field(default_factory=lambda: os.getenv("TYPEFULLY_API_KEY", "").strip())
+    typefully_social_set_id: str = field(default_factory=lambda: os.getenv("TYPEFULLY_SOCIAL_SET_ID", "").strip())
 
     # behaviour
     dry_run: bool = field(default_factory=lambda: _bool("DRY_RUN", True))
