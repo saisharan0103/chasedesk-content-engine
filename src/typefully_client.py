@@ -1,7 +1,6 @@
 """Thin Typefully API client.
 
-Only what V1 needs: create a draft with a future schedule date. In dry-run mode
-nothing is sent — the call just echoes back what *would* have been scheduled.
+Only what V1 needs: create a draft with a future schedule date.
 
 Docs: https://api.typefully.com/  (auth header: X-API-KEY)
 """
@@ -18,16 +17,17 @@ class TypefullyError(RuntimeError):
 
 
 class TypefullyClient:
-    def __init__(self, api_key: str, *, dry_run: bool = False, session: Any = None, timeout: int = 30) -> None:
+    def __init__(self, api_key: str, *, session: Any = None, timeout: int = 30) -> None:
+        if not api_key:
+            raise TypefullyError("TYPEFULLY_API_KEY is not set")
         self.api_key = api_key
-        self.dry_run = dry_run
         self.timeout = timeout
         self._session = session
 
     def _http(self):
         if self._session is not None:
             return self._session
-        import requests  # imported lazily so dry-run works without the dependency
+        import requests
 
         self._session = requests.Session()
         return self._session
@@ -40,17 +40,6 @@ class TypefullyClient:
         threadify: bool = False,
         share: bool = True,
     ) -> dict:
-        if self.dry_run:
-            return {
-                "dry_run": True,
-                "content": content,
-                "schedule_date": schedule_date,
-                "id": None,
-                "share_url": None,
-            }
-        if not self.api_key:
-            raise TypefullyError("TYPEFULLY_API_KEY is not set but dry_run is False")
-
         body: dict[str, Any] = {"content": content, "threadify": threadify, "share": share}
         if schedule_date:
             body["schedule-date"] = schedule_date

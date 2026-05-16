@@ -6,14 +6,8 @@ name: ChaseDesk daily content
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # 03:00 UTC ≈ 08:30 IST
+    - cron: "0 3 * * *"   # 03:00 UTC ~= 08:30 IST
   workflow_dispatch:
-    inputs:
-      dry_run:
-        description: "Run in dry-run mode (don't send anything to Typefully)"
-        type: choice
-        options: ["true", "false"]
-        default: "true"
 
 permissions:
   contents: write
@@ -42,8 +36,6 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o' }}
           TYPEFULLY_API_KEY: ${{ secrets.TYPEFULLY_API_KEY }}
-          # workflow_dispatch input wins; otherwise repo variable DRY_RUN; otherwise 'true'
-          DRY_RUN: ${{ inputs.dry_run || vars.DRY_RUN || 'true' }}
           TIMEZONE: ${{ vars.TIMEZONE || 'Asia/Kolkata' }}
           POSTS_PER_DAY: ${{ vars.POSTS_PER_DAY || '3' }}
           POST_WINDOW_START: ${{ vars.POST_WINDOW_START || '09:00' }}

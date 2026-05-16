@@ -14,31 +14,21 @@ randomized times inside a daily window (strict ≥3h gaps). Competitor / risky t
 go to a **review queue** instead. Everything is logged. Nothing is a pre-written
 tweet — the only static thing is the `content/*.yml` knowledge base of ingredients.
 
-## Quick start (local, no keys needed)
+## Quick start (local)
 
 ```bash
 pip install -r requirements.txt
+cp .env.example .env        # fill in OPENAI_API_KEY and TYPEFULLY_API_KEY
 python -m src.orchestrator
 ```
 
-With no `OPENAI_API_KEY` set, it runs with a **stub generator** (placeholder tweets)
-and forces dry-run, so you can see the whole pipeline work. Look in `logs/`:
+Both keys are required. The orchestrator generates tweets, runs them through
+the quality filter, and schedules passing ones in Typefully. Look in `logs/`:
 
 - `logs/YYYY-MM-DD.md` — human-readable run log
 - `logs/metrics.csv` — one row per slot (metric columns blank, for later backfill)
 - `logs/recent_posts.json` — rolling anti-repetition state
 - `logs/review_queue/YYYY-MM-DD.json` / `.md` — tweets waiting for human approval
-
-## Real run (local)
-
-```bash
-cp .env.example .env        # then fill in OPENAI_API_KEY (and TYPEFULLY_API_KEY when going live)
-python -m src.orchestrator
-```
-
-Keep `DRY_RUN=true` in `.env` for the first few days — it generates + quality-checks
-+ logs but does **not** send anything to Typefully. Flip to `DRY_RUN=false` once
-you're happy with the output.
 
 ## Tests
 
@@ -99,11 +89,10 @@ checkout → install → `python -m src.orchestrator` → commit `logs/`.
 - It schedules for **today** if there's runway before the posting window opens,
   otherwise for **tomorrow**.
 - Set repo secrets: `OPENAI_API_KEY`, `TYPEFULLY_API_KEY` (Settings → Secrets and
-  variables → Actions). Optional repo *variables*: `DRY_RUN` (default `true`),
-  `OPENAI_MODEL`, `TIMEZONE`, `POSTS_PER_DAY`, `POST_WINDOW_START`, `POST_WINDOW_END`,
-  `MIN_GAP_MINUTES`, `CHAR_LIMIT`, `HUMAN_REVIEW_COMPETITOR_POSTS`.
-- To test on demand: Actions tab → "ChaseDesk daily content" → "Run workflow"
-  (choose `dry_run: true`).
+  variables → Actions). Optional repo *variables*: `OPENAI_MODEL`, `TIMEZONE`,
+  `POSTS_PER_DAY`, `POST_WINDOW_START`, `POST_WINDOW_END`, `MIN_GAP_MINUTES`,
+  `CHAR_LIMIT`, `HUMAN_REVIEW_COMPETITOR_POSTS`.
+- To test on demand: Actions tab → "ChaseDesk daily content" → "Run workflow".
 - `logs/recent_posts.json` and `logs/metrics.csv` are committed by the workflow on
   purpose — that's how anti-repetition state and metrics history survive between runs.
 
@@ -117,10 +106,9 @@ checkout → install → `python -m src.orchestrator` → commit `logs/`.
 | `story_seed_builder.py` | build a `GenerationPacket` (strategy + shape + segment + seed + cta + competitor) |
 | `prompt_builder.py` | assemble the OpenAI messages + JSON output schema |
 | `openai_generator.py` | real-time OpenAI call with Structured Outputs |
-| `stub_generator.py` | offline placeholder generator (used only when no API key) |
 | `quality_filter.py` | deterministic checks + human-review routing |
 | `scheduler.py` | randomized posting times (strict ≥ gap), UTC conversion, target-day logic |
-| `typefully_client.py` | create/schedule a draft (no-op in dry-run) |
+| `typefully_client.py` | create/schedule a draft via the Typefully API |
 | `logging_utils.py` | run log, metrics CSV, recent-posts state, review queue |
 | `orchestrator.py` | ties it all together — `python -m src.orchestrator` |
 | `review.py` | review-queue CLI + weekly `retune` |

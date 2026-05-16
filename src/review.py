@@ -72,9 +72,11 @@ def cmd_approve(logs_dir: Path, day: str, index: int) -> int:
     if item.get("decision") != "pending":
         raise SystemExit(f"item {index} already {item.get('decision')}")
 
+    if not config.typefully_api_key:
+        raise SystemExit("TYPEFULLY_API_KEY not set")
     text = item["tweet_text"]
     schedule_utc = item["scheduled_utc"]
-    tf = TypefullyClient(config.typefully_api_key, dry_run=config.dry_run)
+    tf = TypefullyClient(config.typefully_api_key)
     try:
         resp = tf.create_draft(text, schedule_date=schedule_utc)
     except TypefullyError as exc:
@@ -84,8 +86,7 @@ def cmd_approve(logs_dir: Path, day: str, index: int) -> int:
     item["typefully_draft_id"] = resp.get("id")
     item["typefully_share_url"] = resp.get("share_url")
     _save_queue(path, items)
-    where = "DRY-RUN (not sent)" if config.dry_run else f"scheduled (id={resp.get('id')})"
-    print(f"approved item {index} for {day} → {where} at {item['scheduled_local']}")
+    print(f"approved item {index} for {day} -> scheduled (id={resp.get('id')}) at {item['scheduled_local']}")
     return 0
 
 
