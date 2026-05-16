@@ -64,7 +64,7 @@ class RunEntry:
     posted_for: str
     scheduled_local: str
     scheduled_utc: str
-    status: str  # scheduled | dry_run | review_queue | skipped
+    status: str  # scheduled | review_queue | skipped
     strategy: str
     strategy_name: str
     shape: str

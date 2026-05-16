@@ -53,7 +53,6 @@ class Config:
     typefully_api_key: str = field(default_factory=lambda: os.getenv("TYPEFULLY_API_KEY", "").strip())
 
     # behaviour
-    dry_run: bool = field(default_factory=lambda: _bool("DRY_RUN", True))
     posts_per_day: int = field(default_factory=lambda: _int("POSTS_PER_DAY", 3))
     char_limit: int = field(default_factory=lambda: _int("CHAR_LIMIT", 240))
     timezone: str = field(default_factory=lambda: os.getenv("TIMEZONE", "Asia/Kolkata").strip())

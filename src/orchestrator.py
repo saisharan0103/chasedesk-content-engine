@@ -1,12 +1,16 @@
-"""End-to-end run: pick strategies → build prompts → generate (real time) →
-quality-filter → schedule in Typefully → log.
+"""End-to-end run: pick strategies -> build prompts -> generate (real time) ->
+quality-filter -> schedule in Typefully -> log.
 
 Run it with:  python -m src.orchestrator
+
+There is no dry-run mode. If both keys are present, generated+passing tweets are
+sent to Typefully. Tweets that fail the quality filter are skipped; tweets that
+need human review go to the review queue and can be approved with
+`python -m src.review approve`.
 """
 
 from __future__ import annotations
 
-import dataclasses
 import random
 import sys
 from datetime import date, datetime
@@ -29,7 +33,6 @@ from .quality_filter import FilterResult, check_candidate
 from .scheduler import random_post_times, resolve_target_day, to_utc_iso
 from .story_seed_builder import build_packet
 from .strategy_selector import select_strategies
-from .stub_generator import stub_candidates
 from .typefully_client import TypefullyClient, TypefullyError
 
 
@@ -37,13 +40,6 @@ def _today(tz: str) -> date:
     from zoneinfo import ZoneInfo
 
     return datetime.now(ZoneInfo(tz)).date()
-
-
-def _generate(config: Config, use_stub: bool, kb: KnowledgeBase, packet) -> list[dict]:
-    messages, schema = build_prompt(kb, packet)
-    if use_stub:
-        return stub_candidates(packet)
-    return generate_candidates(config, messages, schema)
 
 
 def run(
@@ -57,14 +53,10 @@ def run(
     config = config or load_config()
     notes: list[str] = []
 
-    use_stub = not config.openai_api_key
-    if use_stub:
-        notes.append("OPENAI_API_KEY not set - using the STUB generator (placeholder tweets) and forcing dry-run.")
-        print("[!] " + notes[-1])
-        config = dataclasses.replace(config, dry_run=True)  # never post placeholder tweets
-
-    if not config.dry_run and not config.typefully_api_key:
-        raise RuntimeError("DRY_RUN is false but TYPEFULLY_API_KEY is not set")
+    if not config.openai_api_key:
+        raise RuntimeError("OPENAI_API_KEY is not set")
+    if not config.typefully_api_key:
+        raise RuntimeError("TYPEFULLY_API_KEY is not set")
 
     kb = load_knowledge_base(config.content_dir)
     for warning in kb.warnings:
@@ -93,7 +85,7 @@ def run(
         rng=rng,
     )
 
-    tf = TypefullyClient(config.typefully_api_key, dry_run=config.dry_run)
+    tf = TypefullyClient(config.typefully_api_key)
     entries: list[RunEntry] = []
     used_seed_ids: set[str] = set(cooldown_seed_ids)
 
@@ -114,7 +106,8 @@ def run(
 
         for attempt in range(max(1, config.max_regen_attempts)):
             try:
-                candidates = _generate(config, use_stub, kb, packet)
+                messages, schema = build_prompt(kb, packet)
+                candidates = generate_candidates(config, messages, schema)
             except GeneratorError as exc:
                 last_reasons = [f"generation error: {exc}"]
                 regen_count = attempt + 1
@@ -160,7 +153,7 @@ def run(
                     quality_passed=False,
                     needs_human_review=False,
                     regen_count=regen_count,
-                    generator="stub" if use_stub else "openai",
+                    generator="openai",
                     failure_reasons=last_reasons,
                 )
             )
@@ -174,9 +167,6 @@ def run(
 
         if result.needs_human_review:
             status = "review_queue"
-            draft_id = share_url = None
-        elif config.dry_run:
-            status = "dry_run"
             draft_id = share_url = None
         else:
             try:
@@ -208,7 +198,7 @@ def run(
             quality_passed=True,
             needs_human_review=result.needs_human_review,
             regen_count=regen_count,
-            generator="stub" if use_stub else "openai",
+            generator="openai",
             source_ids=list(candidate.get("source_ids") or []),
             risk_flags=list(result.risk_flags),
             failure_reasons=[r for r in result.reasons] if status == "skipped" else [],
@@ -217,8 +207,7 @@ def run(
         )
         entries.append(entry)
 
-        # only count it toward anti-repetition once it's actually going out
-        if status in ("scheduled", "dry_run"):
+        if status == "scheduled":
             recent_posts.append(
                 {
                     "date": run_date.isoformat(),
@@ -230,7 +219,7 @@ def run(
             )
             recent_texts.append(text)
 
-        marker = {"scheduled": "[ok]", "dry_run": "[dry]", "review_queue": "[rev]", "skipped": "[x]"}.get(status, "[?]")
+        marker = {"scheduled": "[ok]", "review_queue": "[rev]", "skipped": "[x]"}.get(status, "[?]")
         print(f"{marker}  slot {slot + 1} [{strategy.id}] {status} @ {scheduled_local}  ({len(text)} chars)")
 
     write_run_log(config.logs_dir, run_date, target_day=target_day, entries=entries, notes=notes)
@@ -243,10 +232,9 @@ def run(
         print(f"[rev] {len(review_entries)} tweet(s) waiting for review: {json_path}")
 
     scheduled = sum(1 for e in entries if e.status == "scheduled")
-    dry = sum(1 for e in entries if e.status == "dry_run")
     review = len(review_entries)
     skipped = sum(1 for e in entries if e.status == "skipped")
-    print(f"\nDone. scheduled={scheduled} dry_run={dry} review={review} skipped={skipped}  (DRY_RUN={config.dry_run})")
+    print(f"\nDone. scheduled={scheduled} review={review} skipped={skipped}")
     return entries
 
 
@@ -257,7 +245,7 @@ def main(argv: list[str] | None = None) -> int:
         pass
     try:
         run()
-    except Exception as exc:  # surface a clean message in CI logs
+    except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
     return 0
