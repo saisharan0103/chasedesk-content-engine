@@ -1,0 +1,32 @@
+[
+  {
+    "slot": 2,
+    "posted_for": "2026-05-17",
+    "scheduled_local": "2026-05-17 18:20 IST",
+    "scheduled_utc": "2026-05-17T12:50:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "two_part",
+    "segment": "firm_owner_2_20_staff",
+    "seed_id": "no_one_wants_another_portal",
+    "competitor_id": null,
+    "hook_type": "positioning",
+    "tweet_text": "Portals ask clients to log in. That's a barrier.\n\nChaseDesk keeps it simple with a no-login upload link for receipts.",
+    "character_count": 117,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_002"
+    ],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]

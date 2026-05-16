@@ -103,5 +103,19 @@
     "text": "\"Closing by the 5th,\" they said. Two days vanished into chasing receipts—and no plan ever shows that time lost.",
     "seed_id": "chasing_is_invisible_work",
     "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-05-16",
+    "posted_for": "2026-05-17",
+    "text": "It's month-end and your desk is full of uncategorized transactions. ChaseDesk shows exactly which clients are blocking the close, so you know where to focus your chasing efforts.",
+    "seed_id": "month_end_blocked",
+    "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-05-16",
+    "posted_for": "2026-05-17",
+    "text": "Every VAT deadline, the focus shifts:\n\nFrom crunching numbers to chasing invoices. With ChaseDesk, stay on what truly needs your attention.",
+    "seed_id": "vat_deadline_missing_invoices",
+    "strategy_id": "founder_discovery"
   }
 ]
