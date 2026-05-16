@@ -49,8 +49,9 @@ class Config:
     openai_api_key: str = field(default_factory=lambda: os.getenv("OPENAI_API_KEY", "").strip())
     openai_model: str = field(default_factory=lambda: os.getenv("OPENAI_MODEL", "gpt-4o").strip())
 
-    # Typefully
+    # Typefully (v2 API; social_set_id auto-discovers if blank)
     typefully_api_key: str = field(default_factory=lambda: os.getenv("TYPEFULLY_API_KEY", "").strip())
+    typefully_social_set_id: str = field(default_factory=lambda: os.getenv("TYPEFULLY_SOCIAL_SET_ID", "").strip())
 
     # behaviour
     posts_per_day: int = field(default_factory=lambda: _int("POSTS_PER_DAY", 3))
