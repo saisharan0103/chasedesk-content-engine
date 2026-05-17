@@ -117,5 +117,19 @@
     "text": "Every VAT deadline, the focus shifts:\n\nFrom crunching numbers to chasing invoices. With ChaseDesk, stay on what truly needs your attention.",
     "seed_id": "vat_deadline_missing_invoices",
     "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-05-17",
+    "posted_for": "2026-05-18",
+    "text": "Before ChaseDesk:\nEmail clients. Wait. Repeat till month-end.\n\nAfter ChaseDesk:\nAutomatic follow-ups free up your day for real work.",
+    "seed_id": "firm_at_capacity",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-05-17",
+    "posted_for": "2026-05-18",
+    "text": "Clients hear \"new portal\" and freeze up. \n\nWith ChaseDesk, it's just a link. Click and upload, and your job gets easier.",
+    "seed_id": "no_one_wants_another_portal",
+    "strategy_id": "no_login_link"
   }
 ]

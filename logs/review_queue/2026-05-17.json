@@ -1,0 +1,33 @@
+[
+  {
+    "slot": 1,
+    "posted_for": "2026-05-18",
+    "scheduled_local": "2026-05-18 13:40 IST",
+    "scheduled_utc": "2026-05-18T08:10:00Z",
+    "status": "review_queue",
+    "strategy": "soft_waitlist_cta",
+    "strategy_name": "Soft waitlist CTA",
+    "shape": "micro_story",
+    "segment": "firm_owner_2_20_staff",
+    "seed_id": "firm_at_capacity",
+    "competitor_id": null,
+    "hook_type": "soft_cta",
+    "tweet_text": "Juniors chasing receipts, seniors untangling month-end chaos. Two potential clients on hold. Try ChaseDesk. We're letting Xero firms on the waitlist to find hours back without hiring more.",
+    "character_count": 188,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_003",
+      "pf_007"
+    ],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]
