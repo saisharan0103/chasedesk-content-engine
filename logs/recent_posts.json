@@ -131,5 +131,19 @@
     "text": "Clients hear \"new portal\" and freeze up. \n\nWith ChaseDesk, it's just a link. Click and upload, and your job gets easier.",
     "seed_id": "no_one_wants_another_portal",
     "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-05-18",
+    "posted_for": "2026-05-19",
+    "text": "Before ChaseDesk:\nType the same request to clients. Wait. No response.\n\nAfter ChaseDesk:\nAutomatic emails. Receipts arrive. Evening saved.",
+    "seed_id": "same_reminder_eleven_times",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-05-18",
+    "posted_for": "2026-05-19",
+    "text": "Your clients' systems? A shoebox of receipts.\n\nChaseDesk offers a no-login link for uploads, releasing you from the chase.",
+    "seed_id": "shoebox_receipts",
+    "strategy_id": "pain_led_story"
   }
 ]

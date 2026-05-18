@@ -1,0 +1,30 @@
+[
+  {
+    "slot": 2,
+    "posted_for": "2026-05-19",
+    "scheduled_local": "2026-05-19 20:35 IST",
+    "scheduled_utc": "2026-05-19T15:05:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "two_part",
+    "segment": "solo_bookkeeper",
+    "seed_id": "receipts_scattered_everywhere",
+    "competitor_id": null,
+    "hook_type": "category_contrast",
+    "tweet_text": "Most tools swoop in after receipts arrive.\n\nChaseDesk makes sure they get to you first, streamlining your Xero workflow from the start.",
+    "character_count": 135,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]
