@@ -1,0 +1,30 @@
+[
+  {
+    "slot": 0,
+    "posted_for": "2026-05-20",
+    "scheduled_local": "2026-05-20 11:27 IST",
+    "scheduled_utc": "2026-05-20T05:57:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "one_liner",
+    "segment": "practice_ops",
+    "seed_id": "receipts_scattered_everywhere",
+    "competitor_id": null,
+    "hook_type": "category_contrast",
+    "tweet_text": "Receipt tools usually wait for receipts to arrive. ChaseDesk ensures they do.",
+    "character_count": 77,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]

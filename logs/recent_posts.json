@@ -145,5 +145,19 @@
     "text": "Your clients' systems? A shoebox of receipts.\n\nChaseDesk offers a no-login link for uploads, releasing you from the chase.",
     "seed_id": "shoebox_receipts",
     "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-05-19",
+    "posted_for": "2026-05-20",
+    "text": "Before ChaseDesk:\nPainful follow-ups and sleepy Sundays.\n\nAfter ChaseDesk:\nReceipts upload via a simple link, reducing weekend work and stress.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-05-19",
+    "posted_for": "2026-05-20",
+    "text": "It's Monday morning, and instead of diving into numbers, you're buried in emails chasing receipts. Every week feels like a race against time and tasks.",
+    "seed_id": "fifth_followup_email",
+    "strategy_id": "pain_led_story"
   }
 ]
