@@ -159,5 +159,26 @@
     "text": "It's Monday morning, and instead of diving into numbers, you're buried in emails chasing receipts. Every week feels like a race against time and tasks.",
     "seed_id": "fifth_followup_email",
     "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-05-20",
+    "posted_for": "2026-05-21",
+    "text": "Every month-end, you're not just closing books; you're in a scavenger hunt for receipts. ChaseDesk gives you back your time and focus.",
+    "seed_id": "receipts_scattered_everywhere",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-05-20",
+    "posted_for": "2026-05-21",
+    "text": "Before ChaseDesk:\nChase missing receipts Monday morning.\nAfter ChaseDesk:\nFocus on bookkeeping, not follow-ups.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-05-20",
+    "posted_for": "2026-05-21",
+    "text": "The bottleneck for bookkeepers is clear—it's not the accounting process, but getting timely responses from clients.",
+    "seed_id": "client_says_just_estimate",
+    "strategy_id": "founder_discovery"
   }
 ]
