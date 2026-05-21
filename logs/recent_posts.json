@@ -180,5 +180,19 @@
     "text": "The bottleneck for bookkeepers is clear—it's not the accounting process, but getting timely responses from clients.",
     "seed_id": "client_says_just_estimate",
     "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-05-21",
+    "posted_for": "2026-05-22",
+    "text": "Instead of chasing down receipts with no end in sight, imagine opening one screen with all the answers. That's Monday morning with ChaseDesk. Less chase, more close.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-05-21",
+    "posted_for": "2026-05-22",
+    "text": "Before ChaseDesk:\nEndless email chains, chasing receipts.\n\nAfter ChaseDesk:\nAutomated follow-ups save your time.",
+    "seed_id": "month_end_blocked",
+    "strategy_id": "before_after_workflow"
   }
 ]
