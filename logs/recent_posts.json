@@ -194,5 +194,26 @@
     "text": "Before ChaseDesk:\nEndless email chains, chasing receipts.\n\nAfter ChaseDesk:\nAutomated follow-ups save your time.",
     "seed_id": "month_end_blocked",
     "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-05-22",
+    "posted_for": "2026-05-23",
+    "text": "It's not the bookkeeping that's tough—it's the endless loop of receipt chasing that depletes your time and energy.",
+    "seed_id": "same_reminder_eleven_times",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-05-22",
+    "posted_for": "2026-05-23",
+    "text": "You didn't start a bookkeeping practice to chase receipts. ChaseDesk automates follow-ups, freeing you for real accounting work.",
+    "seed_id": "fifth_followup_email",
+    "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-05-22",
+    "posted_for": "2026-05-23",
+    "text": "The client says receipts are 'somewhere safe' but when? You're firefighting, not bookkeeping. ChaseDesk keeps track so you can focus on closing.",
+    "seed_id": "shoebox_receipts",
+    "strategy_id": "hidden_cost"
   }
 ]
