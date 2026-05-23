@@ -1,0 +1,38 @@
+[
+  {
+    "slot": 0,
+    "posted_for": "2026-05-24",
+    "scheduled_local": "2026-05-24 12:04 IST",
+    "scheduled_utc": "2026-05-24T06:34:00Z",
+    "status": "review_queue",
+    "strategy": "soft_waitlist_cta",
+    "strategy_name": "Soft waitlist CTA",
+    "shape": "two_part",
+    "segment": "firm_owner_2_20_staff",
+    "seed_id": "firm_at_capacity",
+    "competitor_id": null,
+    "hook_type": "soft_cta",
+    "tweet_text": "When your team is stuck chasing, growth stalls.\n\nIf you're a Xero firm struggling with this, we're opening ChaseDesk access in batches for firms still doing it manually.",
+    "character_count": 169,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_001",
+      "pf_002",
+      "pf_003",
+      "pf_004",
+      "pf_005",
+      "pf_006",
+      "pf_007"
+    ],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]

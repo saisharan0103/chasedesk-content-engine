@@ -215,5 +215,19 @@
     "text": "The client says receipts are 'somewhere safe' but when? You're firefighting, not bookkeeping. ChaseDesk keeps track so you can focus on closing.",
     "seed_id": "shoebox_receipts",
     "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-05-23",
+    "posted_for": "2026-05-24",
+    "text": "Talked to a bunch of Xero firms this month. The biggest struggle? It's not bookkeeping. It's the constant reminder loop with clients. ChaseDesk steps in to ease that loop, freeing you up for real work time.",
+    "seed_id": "wrong_document_uploaded",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-05-23",
+    "posted_for": "2026-05-24",
+    "text": "Your client doesn’t want a new app. They want simplicity: one click, one upload, no login. And you want to focus on closing, not chasing. That's what ChaseDesk delivers, quietly.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "no_login_link"
   }
 ]
