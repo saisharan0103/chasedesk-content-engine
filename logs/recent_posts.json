@@ -229,5 +229,19 @@
     "text": "Your client doesn’t want a new app. They want simplicity: one click, one upload, no login. And you want to focus on closing, not chasing. That's what ChaseDesk delivers, quietly.",
     "seed_id": "dashboard_who_is_blocking",
     "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-05-24",
+    "posted_for": "2026-05-25",
+    "text": "Receipt chasing isn't small admin; it's a capacity drain that halts team productivity and growth.",
+    "seed_id": "junior_chasing_chain",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-05-24",
+    "posted_for": "2026-05-25",
+    "text": "Your expertise isn't debt collection.\n\nFree your time from chasing receipts with ChaseDesk.",
+    "seed_id": "bookkeeper_not_debt_collector",
+    "strategy_id": "identity_reframe"
   }
 ]

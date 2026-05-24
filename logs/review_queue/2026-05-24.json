@@ -1,0 +1,33 @@
+[
+  {
+    "slot": 2,
+    "posted_for": "2026-05-25",
+    "scheduled_local": "2026-05-25 19:51 IST",
+    "scheduled_utc": "2026-05-25T14:21:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "one_liner",
+    "segment": "practice_ops",
+    "seed_id": "close_waiting_three_weeks",
+    "competitor_id": null,
+    "hook_type": "category_contrast",
+    "tweet_text": "Most tools wait for the receipt to arrive. ChaseDesk ensures it does, shifting your month-end from chaos to calm.",
+    "character_count": 113,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_004",
+      "pf_006"
+    ],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]
