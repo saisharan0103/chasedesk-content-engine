@@ -243,5 +243,26 @@
     "text": "Your expertise isn't debt collection.\n\nFree your time from chasing receipts with ChaseDesk.",
     "seed_id": "bookkeeper_not_debt_collector",
     "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-05-25",
+    "posted_for": "2026-05-26",
+    "text": "The more Xero bookkeepers I meet, the clearer it is: accounting isn’t the bottleneck. It's the client’s delayed responses.",
+    "seed_id": "blurry_whatsapp_photo",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-05-25",
+    "posted_for": "2026-05-26",
+    "text": "Open one screen to see which clients are holding you back from month-end close. ChaseDesk shows who's blocking clean entries, all in one view.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-05-25",
+    "posted_for": "2026-05-26",
+    "text": "It's Sunday night. You're inbox deep in receipt chasing, not in client books.\n\nLet ChaseDesk handle the follow-ups.",
+    "seed_id": "sunday_night_catchup",
+    "strategy_id": "identity_reframe"
   }
 ]
