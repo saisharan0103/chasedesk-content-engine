@@ -264,5 +264,26 @@
     "text": "It's Sunday night. You're inbox deep in receipt chasing, not in client books.\n\nLet ChaseDesk handle the follow-ups.",
     "seed_id": "sunday_night_catchup",
     "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-05-26",
+    "posted_for": "2026-05-27",
+    "text": "Chasing receipts isn't admin—it's a time sink keeping you from taking on new clients.",
+    "seed_id": "close_waiting_three_weeks",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-05-26",
+    "posted_for": "2026-05-27",
+    "text": "You didn't sign up to be a receipt collector. ChaseDesk automates the nagging so you can stick to bookkeeping.",
+    "seed_id": "bookkeeper_not_debt_collector",
+    "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-05-26",
+    "posted_for": "2026-05-27",
+    "text": "The moment you mention a portal, clients cringe. \"Not another password,\" they moan. With ChaseDesk, it's one link. Less time chasing, more time closing.",
+    "seed_id": "no_one_wants_another_portal",
+    "strategy_id": "no_login_link"
   }
 ]
