@@ -285,5 +285,19 @@
     "text": "The moment you mention a portal, clients cringe. \"Not another password,\" they moan. With ChaseDesk, it's one link. Less time chasing, more time closing.",
     "seed_id": "no_one_wants_another_portal",
     "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-05-27",
+    "posted_for": "2026-05-28",
+    "text": "Many Xero bookkeepers say the real blocker isn't the entries, it's the clients' slow response times.",
+    "seed_id": "vat_deadline_missing_invoices",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-05-27",
+    "posted_for": "2026-05-28",
+    "text": "Onboarding a client with months of mismatched receipts. Looks like simple admin, but it's your team's focus that's lost to receipt scavenger hunts. Not bookkeeping—just chasing.",
+    "seed_id": "new_client_paperwork_mess",
+    "strategy_id": "hidden_cost"
   }
 ]
