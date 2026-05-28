@@ -299,5 +299,26 @@
     "text": "Onboarding a client with months of mismatched receipts. Looks like simple admin, but it's your team's focus that's lost to receipt scavenger hunts. Not bookkeeping—just chasing.",
     "seed_id": "new_client_paperwork_mess",
     "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-05-28",
+    "posted_for": "2026-05-29",
+    "text": "Receipts scattered in emails, Dropbox, and texts. Clients dread the hunt for \"just one more.\" Imagine saying \"No app, no portal—just a link!\" With ChaseDesk, receipts unite, and evenings are yours again.",
+    "seed_id": "receipts_scattered_everywhere",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-05-28",
+    "posted_for": "2026-05-29",
+    "text": "Receipt chasing is the fire drill you didn’t plan for every month-end. The unseen work keeping you from the close.",
+    "seed_id": "chasing_is_invisible_work",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-05-28",
+    "posted_for": "2026-05-29",
+    "text": "Another month-end fire drill, chasing down the same receipts? With ChaseDesk, clients get a no-login upload link. Simplifies chasing, lets you focus on closing.",
+    "seed_id": "same_reminder_eleven_times",
+    "strategy_id": "product_mechanic"
   }
 ]
