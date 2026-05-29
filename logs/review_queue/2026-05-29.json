@@ -1,0 +1,30 @@
+[
+  {
+    "slot": 0,
+    "posted_for": "2026-05-30",
+    "scheduled_local": "2026-05-30 11:51 IST",
+    "scheduled_utc": "2026-05-30T06:21:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "two_part",
+    "segment": "solo_bookkeeper",
+    "seed_id": "month_end_blocked",
+    "competitor_id": null,
+    "hook_type": "category_contrast",
+    "tweet_text": "Most receipt tools start after the receipt arrives.\n\nChaseDesk starts with the chase—so you can finish the close.",
+    "character_count": 113,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]

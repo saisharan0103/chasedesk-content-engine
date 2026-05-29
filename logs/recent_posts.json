@@ -320,5 +320,19 @@
     "text": "Another month-end fire drill, chasing down the same receipts? With ChaseDesk, clients get a no-login upload link. Simplifies chasing, lets you focus on closing.",
     "seed_id": "same_reminder_eleven_times",
     "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-05-29",
+    "posted_for": "2026-05-30",
+    "text": "A client sighs at another portal mention. They're relieved when you say, \"It's just a link—click, upload, done.\" ChaseDesk makes it simple for them, efficient for you. Less time chasing, more time closing.",
+    "seed_id": "new_client_paperwork_mess",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-05-29",
+    "posted_for": "2026-05-30",
+    "text": "Your expertise is bookkeeping—not sleuthing for missing receipts.\n\nLet ChaseDesk handle the chase, so you focus on closing the books.",
+    "seed_id": "year_end_ghosting",
+    "strategy_id": "pain_led_story"
   }
 ]
