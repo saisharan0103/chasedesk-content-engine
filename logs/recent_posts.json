@@ -334,5 +334,19 @@
     "text": "Your expertise is bookkeeping—not sleuthing for missing receipts.\n\nLet ChaseDesk handle the chase, so you focus on closing the books.",
     "seed_id": "year_end_ghosting",
     "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-05-30",
+    "posted_for": "2026-05-31",
+    "text": "Instead of juggling emails for missing receipts, open ChaseDesk: one screen, all clients, clear path to month-end close.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-05-30",
+    "posted_for": "2026-05-31",
+    "text": "Before ChaseDesk:\nTedious client reminders, weekends lost to follow-ups.\n\nAfter ChaseDesk:\nAutomated receipt collection, weekends are back for you.",
+    "seed_id": "firm_at_capacity",
+    "strategy_id": "before_after_workflow"
   }
 ]
