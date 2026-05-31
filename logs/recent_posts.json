@@ -348,5 +348,26 @@
     "text": "Before ChaseDesk:\nTedious client reminders, weekends lost to follow-ups.\n\nAfter ChaseDesk:\nAutomated receipt collection, weekends are back for you.",
     "seed_id": "firm_at_capacity",
     "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-05-31",
+    "posted_for": "2026-06-01",
+    "text": "Monday morning shouldn’t start with chasing receipts.\n\nLet bookkeeping be your focus, not endless follow-ups.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-05-31",
+    "posted_for": "2026-06-01",
+    "text": "Tired of the follow-up grind? ChaseDesk automatically detects missing receipts in Xero and chases them down until they're in.",
+    "seed_id": "fifth_followup_email",
+    "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-05-31",
+    "posted_for": "2026-06-01",
+    "text": "Bookkeeping shouldn’t start with chasing receipts. ChaseDesk automates follow-ups so your focus remains on closing books, not chasing down client responses.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "no_login_link"
   }
 ]
