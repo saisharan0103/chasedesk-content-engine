@@ -369,5 +369,26 @@
     "text": "Bookkeeping shouldn’t start with chasing receipts. ChaseDesk automates follow-ups so your focus remains on closing books, not chasing down client responses.",
     "seed_id": "dashboard_who_is_blocking",
     "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-06-01",
+    "posted_for": "2026-06-02",
+    "text": "Before ChaseDesk:\nManual receipt requests, inbox overload.\n\nAfter ChaseDesk:\nAutomated chases, hours back to focus on books.",
+    "seed_id": "month_end_blocked",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-01",
+    "posted_for": "2026-06-02",
+    "text": "As the week kicks off, you're knee-deep in 19 receipt reminders. It may seem small, but it's the quiet cost of your time and team focus. With ChaseDesk, start more Mondays with books, not chases.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-06-01",
+    "posted_for": "2026-06-02",
+    "text": "Shoebox receipts are the bane of month-end.\n\nWith ChaseDesk, clients upload with one link, freeing you for the books, not the chase.",
+    "seed_id": "shoebox_receipts",
+    "strategy_id": "no_login_link"
   }
 ]
