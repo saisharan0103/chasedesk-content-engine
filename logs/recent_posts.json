@@ -390,5 +390,26 @@
     "text": "Shoebox receipts are the bane of month-end.\n\nWith ChaseDesk, clients upload with one link, freeing you for the books, not the chase.",
     "seed_id": "shoebox_receipts",
     "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-06-02",
+    "posted_for": "2026-06-03",
+    "text": "The client laughs off your request for that important receipt. \"Just use last month's,\" they say. The reality? It's your time on the line. ChaseDesk quietly takes over the chase.",
+    "seed_id": "client_says_just_estimate",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-06-02",
+    "posted_for": "2026-06-03",
+    "text": "Clients say 'later' with receipts; we say: no app, no password, just a link. ChaseDesk means less chasing, more closing for you.",
+    "seed_id": "shoebox_receipts",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-06-02",
+    "posted_for": "2026-06-03",
+    "text": "The real bottleneck in closing books isn't the accounting; it's the days lost chasing after receipts.",
+    "seed_id": "chasing_is_invisible_work",
+    "strategy_id": "pain_led_story"
   }
 ]
