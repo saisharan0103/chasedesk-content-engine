@@ -411,5 +411,19 @@
     "text": "The real bottleneck in closing books isn't the accounting; it's the days lost chasing after receipts.",
     "seed_id": "chasing_is_invisible_work",
     "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-03",
+    "posted_for": "2026-06-04",
+    "text": "Every month-end: clients avoiding receipts like the plague.\n\nNo app, no password, just one link for uploads. ChaseDesk simplifies their task and your workflow.",
+    "seed_id": "fifth_followup_email",
+    "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-06-03",
+    "posted_for": "2026-06-04",
+    "text": "Chasing missing receipts across client channels isn't bookkeeping. ChaseDesk helps you say: no app, no password, just a link.",
+    "seed_id": "receipts_scattered_everywhere",
+    "strategy_id": "no_login_link"
   }
 ]

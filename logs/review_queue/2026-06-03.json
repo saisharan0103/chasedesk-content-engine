@@ -1,0 +1,32 @@
+[
+  {
+    "slot": 2,
+    "posted_for": "2026-06-04",
+    "scheduled_local": "2026-06-04 20:32 IST",
+    "scheduled_utc": "2026-06-04T15:02:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "two_part",
+    "segment": "firm_owner_2_20_staff",
+    "seed_id": "month_end_blocked",
+    "competitor_id": "hubdoc",
+    "hook_type": "category_contrast",
+    "tweet_text": "Most tools sit back until receipts arrive. We act sooner.\n\nChaseDesk chases down missing receipts, so books close without delay.",
+    "character_count": 128,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_004"
+    ],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]
