@@ -1,0 +1,32 @@
+[
+  {
+    "slot": 1,
+    "posted_for": "2026-06-05",
+    "scheduled_local": "2026-06-05 16:17 IST",
+    "scheduled_utc": "2026-06-05T10:47:00Z",
+    "status": "review_queue",
+    "strategy": "soft_waitlist_cta",
+    "strategy_name": "Soft waitlist CTA",
+    "shape": "micro_story",
+    "segment": "solo_bookkeeper",
+    "seed_id": "firm_at_capacity",
+    "competitor_id": null,
+    "hook_type": "soft_cta",
+    "tweet_text": "Receipt chasing: the silent cap on growth. If this scene sounds familiar, we're opening up ChaseDesk to help you gain hours back. Bookkeeping, not chasing.",
+    "character_count": 155,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_004"
+    ],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]

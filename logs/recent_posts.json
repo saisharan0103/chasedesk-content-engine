@@ -425,5 +425,19 @@
     "text": "Chasing missing receipts across client channels isn't bookkeeping. ChaseDesk helps you say: no app, no password, just a link.",
     "seed_id": "receipts_scattered_everywhere",
     "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-06-04",
+    "posted_for": "2026-06-05",
+    "text": "Receipts lost in emails, texts, and Dropbox.\n\nClients just want one link, no app. ChaseDesk provides it, so you focus on closing books.",
+    "seed_id": "receipts_scattered_everywhere",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-06-04",
+    "posted_for": "2026-06-05",
+    "text": "Before ChaseDesk:\nEndless receipt hunts, client excuses.\n\nAfter ChaseDesk:\nClients upload with one link, stress declines.",
+    "seed_id": "junior_chasing_chain",
+    "strategy_id": "before_after_workflow"
   }
 ]
