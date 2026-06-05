@@ -439,5 +439,26 @@
     "text": "Before ChaseDesk:\nEndless receipt hunts, client excuses.\n\nAfter ChaseDesk:\nClients upload with one link, stress declines.",
     "seed_id": "junior_chasing_chain",
     "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-05",
+    "posted_for": "2026-06-06",
+    "text": "Instead of spending evenings chasing receipts, let ChaseDesk do it automatically. Focus on what matters: closing the books.",
+    "seed_id": "sunday_night_catchup",
+    "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-06-05",
+    "posted_for": "2026-06-06",
+    "text": "Before ChaseDesk:\nManual reminders, emails pile up, weekends vanish.\n\nAfter ChaseDesk:\nAutomatic chases reclaim your weekends for real work.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-05",
+    "posted_for": "2026-06-06",
+    "text": "Client sends a bank statement instead of a receipt? Been there.\n\nChaseDesk detects missing receipts and only stops chasing once the right doc's in.",
+    "seed_id": "wrong_document_uploaded",
+    "strategy_id": "product_mechanic"
   }
 ]
