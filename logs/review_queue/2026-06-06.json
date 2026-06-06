@@ -1,0 +1,33 @@
+[
+  {
+    "slot": 2,
+    "posted_for": "2026-06-07",
+    "scheduled_local": "2026-06-07 20:07 IST",
+    "scheduled_utc": "2026-06-07T14:37:00Z",
+    "status": "review_queue",
+    "strategy": "soft_waitlist_cta",
+    "strategy_name": "Soft waitlist CTA",
+    "shape": "micro_story",
+    "segment": "firm_owner_2_20_staff",
+    "seed_id": "firm_at_capacity",
+    "competitor_id": null,
+    "hook_type": "soft_cta",
+    "tweet_text": "The day starts with your team chasing receipts instead of closing books. It's the quiet cost of growth. ChaseDesk is welcoming Xero firms still stuck in the manual chase to join our waitlist.",
+    "character_count": 191,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_004",
+      "pf_007"
+    ],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]

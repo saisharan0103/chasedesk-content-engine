@@ -460,5 +460,19 @@
     "text": "Client sends a bank statement instead of a receipt? Been there.\n\nChaseDesk detects missing receipts and only stops chasing once the right doc's in.",
     "seed_id": "wrong_document_uploaded",
     "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-06-06",
+    "posted_for": "2026-06-07",
+    "text": "Receipt chasing isn't just admin—it's hours lost that could be spent on new clients.",
+    "seed_id": "bookkeeper_not_debt_collector",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-06-06",
+    "posted_for": "2026-06-07",
+    "text": "On a Monday, do you want to chase receipts or close books?\n\nChaseDesk connects to Xero and moves the needle on what's missing.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "identity_reframe"
   }
 ]
