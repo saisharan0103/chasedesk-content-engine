@@ -474,5 +474,26 @@
     "text": "On a Monday, do you want to chase receipts or close books?\n\nChaseDesk connects to Xero and moves the needle on what's missing.",
     "seed_id": "monday_email_queue",
     "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-06-07",
+    "posted_for": "2026-06-08",
+    "text": "Before ChaseDesk:\nManual follow-ups, inbox chaos, weekend admin.\n\nAfter ChaseDesk:\nReceipts auto-chased, weekends back to you.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-07",
+    "posted_for": "2026-06-08",
+    "text": "Every VAT deadline finds you chasing supplier invoices instead of closing books.\n\nWith ChaseDesk, focus on the close, not the chase.",
+    "seed_id": "vat_deadline_missing_invoices",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-07",
+    "posted_for": "2026-06-08",
+    "text": "Shoeboxes aren’t systems; they're bottlenecks. ChaseDesk’s no-login link turns client chaos into streamlined closes.",
+    "seed_id": "shoebox_receipts",
+    "strategy_id": "identity_reframe"
   }
 ]
