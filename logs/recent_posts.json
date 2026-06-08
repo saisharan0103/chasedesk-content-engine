@@ -495,5 +495,26 @@
     "text": "Shoeboxes aren’t systems; they're bottlenecks. ChaseDesk’s no-login link turns client chaos into streamlined closes.",
     "seed_id": "shoebox_receipts",
     "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-06-08",
+    "posted_for": "2026-06-09",
+    "text": "The crawl to close isn't in the numbers—it's the constant nudge for receipts that holds you in limbo.",
+    "seed_id": "close_waiting_three_weeks",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-08",
+    "posted_for": "2026-06-09",
+    "text": "Bookkeeping or chasing? You trained for books, not reminders.",
+    "seed_id": "same_reminder_eleven_times",
+    "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-06-08",
+    "posted_for": "2026-06-09",
+    "text": "Before ChaseDesk:\nInbox overload, chasing receipts, weekends lost to admin.\n\nAfter ChaseDesk:\nAutomated follow-ups, weekends return, focus sharpens on growth.",
+    "seed_id": "new_client_paperwork_mess",
+    "strategy_id": "before_after_workflow"
   }
 ]
