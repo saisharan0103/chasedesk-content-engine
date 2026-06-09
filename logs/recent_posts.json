@@ -516,5 +516,26 @@
     "text": "Before ChaseDesk:\nInbox overload, chasing receipts, weekends lost to admin.\n\nAfter ChaseDesk:\nAutomated follow-ups, weekends return, focus sharpens on growth.",
     "seed_id": "new_client_paperwork_mess",
     "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-09",
+    "posted_for": "2026-06-10",
+    "text": "Trained for bookkeeping, stuck in receipt follow-ups.\n\nChaseDesk lets you reclaim your focus for closing the books.",
+    "seed_id": "bookkeeper_not_debt_collector",
+    "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-06-09",
+    "posted_for": "2026-06-10",
+    "text": "Ever sift through emails for that one missing receipt?\n\nChaseDesk shows which clients are blocking the month-end close, all in one clear dashboard. No more guesswork.",
+    "seed_id": "blurry_whatsapp_photo",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-06-09",
+    "posted_for": "2026-06-10",
+    "text": "Before ChaseDesk: opening emails, sifting through portals. After? Clients use a simple upload link—no app, no password. You get clean entries back in Xero seamlessly. Simple as that.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "product_mechanic"
   }
 ]
