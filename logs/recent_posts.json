@@ -537,5 +537,26 @@
     "text": "Before ChaseDesk: opening emails, sifting through portals. After? Clients use a simple upload link—no app, no password. You get clean entries back in Xero seamlessly. Simple as that.",
     "seed_id": "dashboard_who_is_blocking",
     "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-06-10",
+    "posted_for": "2026-06-11",
+    "text": "Month-end isn't stalled by calculations; it's the receipts waiting in inbox limbo that hold up your close.",
+    "seed_id": "year_end_ghosting",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-10",
+    "posted_for": "2026-06-11",
+    "text": "Talked to more Xero bookkeepers—it's evident:\n\nThe chase for receipts is the hidden time sink, not the ledger work.",
+    "seed_id": "no_one_wants_another_portal",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-06-10",
+    "posted_for": "2026-06-11",
+    "text": "Inbox chaos, receipt reminders, weekends gone.\n\nChaseDesk automates the chase so you get your weekends back.",
+    "seed_id": "sunday_night_catchup",
+    "strategy_id": "identity_reframe"
   }
 ]
