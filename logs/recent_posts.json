@@ -558,5 +558,26 @@
     "text": "Inbox chaos, receipt reminders, weekends gone.\n\nChaseDesk automates the chase so you get your weekends back.",
     "seed_id": "sunday_night_catchup",
     "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-06-11",
+    "posted_for": "2026-06-12",
+    "text": "Your Monday morning: buried under old follow-ups and new excuses.\n\nIs this the bookkeeping you signed up for?",
+    "seed_id": "new_client_paperwork_mess",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-11",
+    "posted_for": "2026-06-12",
+    "text": "Before ChaseDesk: Spend hours emailing clients, juggling apps just to get receipts.\n\nAfter ChaseDesk: One no-login link and the receipts come to you.",
+    "seed_id": "firm_at_capacity",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-11",
+    "posted_for": "2026-06-12",
+    "text": "Receipts aren't in your books because they're still in client gloveboxes. ChaseDesk’s link means less chasing, more closing.",
+    "seed_id": "shoebox_receipts",
+    "strategy_id": "no_login_link"
   }
 ]
