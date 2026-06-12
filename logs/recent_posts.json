@@ -579,5 +579,26 @@
     "text": "Receipts aren't in your books because they're still in client gloveboxes. ChaseDesk’s link means less chasing, more closing.",
     "seed_id": "shoebox_receipts",
     "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-06-12",
+    "posted_for": "2026-06-13",
+    "text": "Skip the inbox overload. With ChaseDesk, clients upload receipts via one simple link. Less chasing, more focus on closing books.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-06-12",
+    "posted_for": "2026-06-13",
+    "text": "Your focus should be on closing the books, not chasing paper trails.\n\nRemember, the real work isn't just accounting; it's the invisible hustle for receipts.",
+    "seed_id": "month_end_blocked",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-12",
+    "posted_for": "2026-06-13",
+    "text": "Month-end close: not about crunching numbers, but chasing paperwork.\n\nChaseDesk auto-detects missing receipts, so you can focus on what really counts.",
+    "seed_id": "month_end_blocked",
+    "strategy_id": "product_mechanic"
   }
 ]
