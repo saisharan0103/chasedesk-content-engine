@@ -600,5 +600,26 @@
     "text": "Month-end close: not about crunching numbers, but chasing paperwork.\n\nChaseDesk auto-detects missing receipts, so you can focus on what really counts.",
     "seed_id": "month_end_blocked",
     "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-06-13",
+    "posted_for": "2026-06-14",
+    "text": "Chasing receipts isn't just admin—it's the silent thief of your team's capacity at month-end.",
+    "seed_id": "chasing_is_invisible_work",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-06-13",
+    "posted_for": "2026-06-14",
+    "text": "Before ChaseDesk:\nEndless email chains, lost weekends.\n\nAfter ChaseDesk:\nReceipts autopilot, weekends back.",
+    "seed_id": "junior_chasing_chain",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-13",
+    "posted_for": "2026-06-14",
+    "text": "\"Just use last month's receipt,\" they say, as if that's bookkeeping.\n\nManual chases are the real time drain, not your skills.",
+    "seed_id": "client_says_just_estimate",
+    "strategy_id": "pain_led_story"
   }
 ]
