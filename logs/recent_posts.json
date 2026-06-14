@@ -621,5 +621,26 @@
     "text": "\"Just use last month's receipt,\" they say, as if that's bookkeeping.\n\nManual chases are the real time drain, not your skills.",
     "seed_id": "client_says_just_estimate",
     "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-14",
+    "posted_for": "2026-06-15",
+    "text": "Bookkeeping isn't hard; it's the invisible grind of chasing receipts that derails the schedule.",
+    "seed_id": "fifth_followup_email",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-14",
+    "posted_for": "2026-06-15",
+    "text": "\"Month-end isn't held up by account reconciliations—it's the client follow-ups that steal the hours.\"",
+    "seed_id": "junior_chasing_chain",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-06-14",
+    "posted_for": "2026-06-15",
+    "text": "Before ChaseDesk: Days lost to emails and manual follow-ups.\n\nAfter ChaseDesk: Clients upload through one simple link—no more chasing.",
+    "seed_id": "chasing_is_invisible_work",
+    "strategy_id": "before_after_workflow"
   }
 ]
