@@ -642,5 +642,26 @@
     "text": "Before ChaseDesk: Days lost to emails and manual follow-ups.\n\nAfter ChaseDesk: Clients upload through one simple link—no more chasing.",
     "seed_id": "chasing_is_invisible_work",
     "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-15",
+    "posted_for": "2026-06-16",
+    "text": "Admin tasks look small until chasing receipts caps your firm's growth.",
+    "seed_id": "firm_at_capacity",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-06-15",
+    "posted_for": "2026-06-16",
+    "text": "Xero bookkeepers — what's your biggest month-end hurdle?\n\n1. Missing receipts\n2. Client follow-ups\n3. Categorization delays\n4. Communication gaps",
+    "seed_id": "month_end_blocked",
+    "strategy_id": "customer_question"
+  },
+  {
+    "date": "2026-06-15",
+    "posted_for": "2026-06-16",
+    "text": "Receipts in clients' inboxes, but not in Xero? That's the reality. It’s the client follow-ups that stretch your workload, not the numbers. With ChaseDesk, the chase turns into automated precision.",
+    "seed_id": "receipts_scattered_everywhere",
+    "strategy_id": "founder_discovery"
   }
 ]
