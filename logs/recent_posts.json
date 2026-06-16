@@ -663,5 +663,19 @@
     "text": "Receipts in clients' inboxes, but not in Xero? That's the reality. It’s the client follow-ups that stretch your workload, not the numbers. With ChaseDesk, the chase turns into automated precision.",
     "seed_id": "receipts_scattered_everywhere",
     "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-06-16",
+    "posted_for": "2026-06-17",
+    "text": "Clients dread portals for receipts. ChaseDesk's no-login link makes it one click instead.",
+    "seed_id": "no_one_wants_another_portal",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-06-16",
+    "posted_for": "2026-06-17",
+    "text": "The real bottleneck at month-end? It's not the reconciliations—it's the invisible grind of chasing receipts.",
+    "seed_id": "chasing_is_invisible_work",
+    "strategy_id": "hidden_cost"
   }
 ]

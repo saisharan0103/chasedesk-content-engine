@@ -1,0 +1,32 @@
+[
+  {
+    "slot": 2,
+    "posted_for": "2026-06-17",
+    "scheduled_local": "2026-06-17 20:05 IST",
+    "scheduled_utc": "2026-06-17T14:35:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "micro_story",
+    "segment": "solo_bookkeeper",
+    "seed_id": "no_one_wants_another_portal",
+    "competitor_id": null,
+    "hook_type": "positioning",
+    "tweet_text": "\"Another portal?\" The client's face says it all. Portals are friction in disguise. ChaseDesk uses a no-login link—no app, no password. Less resistance, more receipts. That's how you close books faster.",
+    "character_count": 201,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_002"
+    ],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]
