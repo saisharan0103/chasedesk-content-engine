@@ -677,5 +677,26 @@
     "text": "The real bottleneck at month-end? It's not the reconciliations—it's the invisible grind of chasing receipts.",
     "seed_id": "chasing_is_invisible_work",
     "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-06-17",
+    "posted_for": "2026-06-18",
+    "text": "Every month, the plan seems simple: close on time. But chasing receipts eats away days unnoticed, delaying every close.",
+    "seed_id": "chasing_is_invisible_work",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-06-17",
+    "posted_for": "2026-06-18",
+    "text": "The client finally sends something. Success?\n\nNope. It's last year's invoice. The follow-up loop just got longer. Welcome to the real month-end struggle.",
+    "seed_id": "wrong_document_uploaded",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-06-17",
+    "posted_for": "2026-06-18",
+    "text": "Manual chasing of receipts isn’t a bookkeeping skill; it’s your weekend thief.",
+    "seed_id": "sunday_night_catchup",
+    "strategy_id": "pain_led_story"
   }
 ]
