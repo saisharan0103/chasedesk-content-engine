@@ -698,5 +698,26 @@
     "text": "Manual chasing of receipts isn’t a bookkeeping skill; it’s your weekend thief.",
     "seed_id": "sunday_night_catchup",
     "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-18",
+    "posted_for": "2026-06-19",
+    "text": "You planned for clean books, not frantic searches. Yet here you are, hunting down receipts when you should be closing. It's the grind you never signed up for.",
+    "seed_id": "vat_deadline_missing_invoices",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-18",
+    "posted_for": "2026-06-19",
+    "text": "The more bookkeepers we talk to, the clearer it gets: \n\nClient follow-ups, not accounting, sidetrack the month-end close.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-06-18",
+    "posted_for": "2026-06-19",
+    "text": "Monday morning shouldn't start with 19 reminder emails. ChaseDesk automates the follow-up so you can focus on closing.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "identity_reframe"
   }
 ]
