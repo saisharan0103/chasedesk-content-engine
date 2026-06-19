@@ -719,5 +719,26 @@
     "text": "Monday morning shouldn't start with 19 reminder emails. ChaseDesk automates the follow-up so you can focus on closing.",
     "seed_id": "monday_email_queue",
     "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-06-19",
+    "posted_for": "2026-06-20",
+    "text": "Before ChaseDesk: Inbox full, weekends lost, follow-up loops.\n\nAfter ChaseDesk: Receipts automatically chased, weekends saved, books closed faster.",
+    "seed_id": "same_reminder_eleven_times",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-19",
+    "posted_for": "2026-06-20",
+    "text": "Talked to more Xero bookkeepers: it's not just about balancing accounts. Every month, it's the waiting game with clients. ChaseDesk quietly handles the chase, so you're not stuck in limbo.",
+    "seed_id": "close_waiting_three_weeks",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-06-19",
+    "posted_for": "2026-06-20",
+    "text": "Your client sends receipts from three different apps. Sound familiar? Collecting them stalls your close, one email at a time.",
+    "seed_id": "receipts_scattered_everywhere",
+    "strategy_id": "pain_led_story"
   }
 ]
