@@ -740,5 +740,19 @@
     "text": "Your client sends receipts from three different apps. Sound familiar? Collecting them stalls your close, one email at a time.",
     "seed_id": "receipts_scattered_everywhere",
     "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-20",
+    "posted_for": "2026-06-21",
+    "text": "Your client sent a blurry photo of a crumpled receipt. When \"received\" feels more like a starting point than a victory, the chase isn't over.",
+    "seed_id": "blurry_whatsapp_photo",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-20",
+    "posted_for": "2026-06-21",
+    "text": "Client follow-ups eat your afternoons—time you can’t get back.\n\nWith ChaseDesk, automate the chase and reclaim your evenings.",
+    "seed_id": "bookkeeper_not_debt_collector",
+    "strategy_id": "identity_reframe"
   }
 ]
