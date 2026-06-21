@@ -1,0 +1,33 @@
+[
+  {
+    "slot": 2,
+    "posted_for": "2026-06-22",
+    "scheduled_local": "2026-06-22 18:46 IST",
+    "scheduled_utc": "2026-06-22T13:16:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "one_liner",
+    "segment": "practice_ops",
+    "seed_id": "no_one_wants_another_portal",
+    "competitor_id": "ezzybills",
+    "hook_type": "category_contrast",
+    "tweet_text": "Most receipt tools start after the receipt arrives. With ChaseDesk, the chase begins before, ensuring clients send what's missing.",
+    "character_count": 130,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_003",
+      "pf_004"
+    ],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]

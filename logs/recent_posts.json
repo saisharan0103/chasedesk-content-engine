@@ -754,5 +754,19 @@
     "text": "Client follow-ups eat your afternoons—time you can’t get back.\n\nWith ChaseDesk, automate the chase and reclaim your evenings.",
     "seed_id": "bookkeeper_not_debt_collector",
     "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-06-21",
+    "posted_for": "2026-06-22",
+    "text": "Your expertise is in the numbers, not in client chasing.\n\nWith ChaseDesk, receipts arrive without the grind.",
+    "seed_id": "same_reminder_eleven_times",
+    "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-06-21",
+    "posted_for": "2026-06-22",
+    "text": "End of month, numbers ready to close, yet 27 transactions hang in limbo.\n\nChaseDesk's no-login link lets clients send receipts without a hitch. The focus shifts back to closing, not chasing.",
+    "seed_id": "month_end_blocked",
+    "strategy_id": "product_mechanic"
   }
 ]
