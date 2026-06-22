@@ -1,0 +1,33 @@
+[
+  {
+    "slot": 2,
+    "posted_for": "2026-06-23",
+    "scheduled_local": "2026-06-23 19:47 IST",
+    "scheduled_utc": "2026-06-23T14:17:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "micro_story",
+    "segment": "practice_ops",
+    "seed_id": "receipts_scattered_everywhere",
+    "competitor_id": null,
+    "hook_type": "category_contrast",
+    "tweet_text": "Receipts scattered across emails, Dropbox, text messages—sound familiar? Most tools wait for these to arrive, but ChaseDesk gets them in the door so you can focus on closing.",
+    "character_count": 174,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_006",
+      "pf_007"
+    ],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]

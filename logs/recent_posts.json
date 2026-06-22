@@ -768,5 +768,19 @@
     "text": "End of month, numbers ready to close, yet 27 transactions hang in limbo.\n\nChaseDesk's no-login link lets clients send receipts without a hitch. The focus shifts back to closing, not chasing.",
     "seed_id": "month_end_blocked",
     "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-06-22",
+    "posted_for": "2026-06-23",
+    "text": "Before ChaseDesk: Onslaught of emails, cross-checking bank transactions with receipts.\n\nAfter ChaseDesk: Autopilot finds what's missing and chases it down.",
+    "seed_id": "new_client_paperwork_mess",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-22",
+    "posted_for": "2026-06-23",
+    "text": "Talked to more Xero bookkeepers: it's always the same. You're ready to close, but clients haven't sent their receipts. ChaseDesk handles the follow-ups so you can handle the books.",
+    "seed_id": "year_end_ghosting",
+    "strategy_id": "founder_discovery"
   }
 ]
