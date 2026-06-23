@@ -782,5 +782,26 @@
     "text": "Talked to more Xero bookkeepers: it's always the same. You're ready to close, but clients haven't sent their receipts. ChaseDesk handles the follow-ups so you can handle the books.",
     "seed_id": "year_end_ghosting",
     "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-06-23",
+    "posted_for": "2026-06-24",
+    "text": "Receipts are the real chase. With ChaseDesk auto-detecting what's missing, the focus shifts back to closing, not chasing.",
+    "seed_id": "receipts_scattered_everywhere",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-06-23",
+    "posted_for": "2026-06-24",
+    "text": "Receipts stuck in a client's glovebox while your team juggles month-end? You've planned for clean books, not endless chases. In the quiet, ChaseDesk quietly nudges clients, freeing your focus on closing.",
+    "seed_id": "shoebox_receipts",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-23",
+    "posted_for": "2026-06-24",
+    "text": "Before ChaseDesk: Manual chases, inbox clutter, schedule slips.\n\nAfter ChaseDesk: Detect missing receipts, focused client nudges, clear path to month-end close.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "before_after_workflow"
   }
 ]
