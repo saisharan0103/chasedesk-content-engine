@@ -803,5 +803,26 @@
     "text": "Before ChaseDesk: Manual chases, inbox clutter, schedule slips.\n\nAfter ChaseDesk: Detect missing receipts, focused client nudges, clear path to month-end close.",
     "seed_id": "dashboard_who_is_blocking",
     "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-24",
+    "posted_for": "2026-06-25",
+    "text": "Your client doesn't want reminders clogging their inbox.\n\nThey want a link—click, upload, done. ChaseDesk makes it happen, so you're not chasing.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-06-24",
+    "posted_for": "2026-06-25",
+    "text": "Your job is closing books, not chasing last year’s receipts. With ChaseDesk, receipts arrive without the grind.",
+    "seed_id": "close_waiting_three_weeks",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-06-24",
+    "posted_for": "2026-06-25",
+    "text": "Before ChaseDesk:\nMonday morning scramble to send follow-up emails.\n\nAfter ChaseDesk:\nStart the week with receipts already on their way.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "before_after_workflow"
   }
 ]
