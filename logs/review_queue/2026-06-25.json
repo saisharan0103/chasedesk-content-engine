@@ -1,0 +1,33 @@
+[
+  {
+    "slot": 2,
+    "posted_for": "2026-06-26",
+    "scheduled_local": "2026-06-26 20:14 IST",
+    "scheduled_utc": "2026-06-26T14:44:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "micro_story",
+    "segment": "firm_owner_2_20_staff",
+    "seed_id": "close_waiting_three_weeks",
+    "competitor_id": null,
+    "hook_type": "category_contrast",
+    "tweet_text": "Receipt tools often start after documents arrive. But the real issue is getting that receipt in the first place. ChaseDesk automates the ask, shifting your team from chasing to closing.",
+    "character_count": 185,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_004",
+      "pf_006"
+    ],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]

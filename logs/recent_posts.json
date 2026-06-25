@@ -824,5 +824,19 @@
     "text": "Before ChaseDesk:\nMonday morning scramble to send follow-up emails.\n\nAfter ChaseDesk:\nStart the week with receipts already on their way.",
     "seed_id": "monday_email_queue",
     "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-25",
+    "posted_for": "2026-06-26",
+    "text": "Before ChaseDesk:\nInbox flooded with repeated follow-ups.\n\nAfter ChaseDesk:\nReceipts auto-chased, inbox cleared for closing.",
+    "seed_id": "junior_chasing_chain",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-25",
+    "posted_for": "2026-06-26",
+    "text": "Every Xero bookkeeper knows: it's not the accounting holding you back.\n\nIt's chasing the paper trail. With ChaseDesk's no-login link, clients send what you need without the hassle.",
+    "seed_id": "fifth_followup_email",
+    "strategy_id": "founder_discovery"
   }
 ]
