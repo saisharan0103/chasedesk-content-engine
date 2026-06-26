@@ -838,5 +838,26 @@
     "text": "Every Xero bookkeeper knows: it's not the accounting holding you back.\n\nIt's chasing the paper trail. With ChaseDesk's no-login link, clients send what you need without the hassle.",
     "seed_id": "fifth_followup_email",
     "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-06-26",
+    "posted_for": "2026-06-27",
+    "text": "Receipt chasing feels invisible.\n\nBut it's the bottleneck quietly capping your firm's growth. ChaseDesk automates the process.",
+    "seed_id": "firm_at_capacity",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-06-26",
+    "posted_for": "2026-06-27",
+    "text": "You're closing books, not chasing yesterday's papers. Let ChaseDesk automate the follow-ups, so your Sundays are yours again.",
+    "seed_id": "client_says_just_estimate",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-26",
+    "posted_for": "2026-06-27",
+    "text": "Clients dread multiple logins for uploading receipts.\n\nWith ChaseDesk, one link does it all—no passwords, no portals, just receipts delivered.",
+    "seed_id": "receipts_scattered_everywhere",
+    "strategy_id": "no_login_link"
   }
 ]
