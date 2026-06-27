@@ -859,5 +859,26 @@
     "text": "Clients dread multiple logins for uploading receipts.\n\nWith ChaseDesk, one link does it all—no passwords, no portals, just receipts delivered.",
     "seed_id": "receipts_scattered_everywhere",
     "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-06-27",
+    "posted_for": "2026-06-28",
+    "text": "Suggested a client portal for receipts today. The response? \"Just not another login, please.\" Portals add friction the client never wants. It's about reducing barriers, not adding them.",
+    "seed_id": "no_one_wants_another_portal",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-06-27",
+    "posted_for": "2026-06-28",
+    "text": "Before ChaseDesk: Start every month-end firefight with a paper chase.\n\nAfter ChaseDesk: See who’s blocking close. Spend less time chasing and more time closing.",
+    "seed_id": "new_client_paperwork_mess",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-27",
+    "posted_for": "2026-06-28",
+    "text": "Month-end arrives, but the receipts don't. \n\nThe real bottleneck isn’t the books—it’s waiting on what's missing.",
+    "seed_id": "shoebox_receipts",
+    "strategy_id": "pain_led_story"
   }
 ]
