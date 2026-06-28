@@ -880,5 +880,19 @@
     "text": "Month-end arrives, but the receipts don't. \n\nThe real bottleneck isn’t the books—it’s waiting on what's missing.",
     "seed_id": "shoebox_receipts",
     "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-28",
+    "posted_for": "2026-06-29",
+    "text": "The more bookkeepers we talk to, the clearer it gets:\n\nMonth-end's real grind? Not the accounting—it's ensuring receipts aren't stuck out there in limbo.",
+    "seed_id": "chasing_is_invisible_work",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-06-28",
+    "posted_for": "2026-06-29",
+    "text": "Before ChaseDesk: Manual chases that wear you down.\n\nAfter ChaseDesk: Receipts sorted, less firefighting, more time to grow the firm.",
+    "seed_id": "firm_at_capacity",
+    "strategy_id": "before_after_workflow"
   }
 ]
