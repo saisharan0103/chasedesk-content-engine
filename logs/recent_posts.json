@@ -894,5 +894,26 @@
     "text": "Before ChaseDesk: Manual chases that wear you down.\n\nAfter ChaseDesk: Receipts sorted, less firefighting, more time to grow the firm.",
     "seed_id": "firm_at_capacity",
     "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-29",
+    "posted_for": "2026-06-30",
+    "text": "Clients hate portals—they want quick and simple.\n\nChaseDesk gives them a link: click, upload, done. Meanwhile, you get hours back.",
+    "seed_id": "new_client_paperwork_mess",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-06-29",
+    "posted_for": "2026-06-30",
+    "text": "Before ChaseDesk: End-of-month madness. Chasing receipts eats your time and focus.\n\nAfter ChaseDesk: Auto-chase receipts, clear focus for the real work—closing books.",
+    "seed_id": "firm_at_capacity",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-06-29",
+    "posted_for": "2026-06-30",
+    "text": "VAT deadline's this Friday, yet missing receipts keep piling up. This isn't accounting; it's a paper chase—and it's eating your schedule.",
+    "seed_id": "vat_deadline_missing_invoices",
+    "strategy_id": "pain_led_story"
   }
 ]
