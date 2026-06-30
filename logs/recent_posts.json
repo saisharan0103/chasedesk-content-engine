@@ -915,5 +915,26 @@
     "text": "VAT deadline's this Friday, yet missing receipts keep piling up. This isn't accounting; it's a paper chase—and it's eating your schedule.",
     "seed_id": "vat_deadline_missing_invoices",
     "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-30",
+    "posted_for": "2026-07-01",
+    "text": "Month-end's real killer? Not the numbers—it's chasing receipts that clients \"promised to send.\"",
+    "seed_id": "wrong_document_uploaded",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-06-30",
+    "posted_for": "2026-07-01",
+    "text": "You're drafting yet another follow-up email for missing receipts. A never-ending cycle that eats your time. Let ChaseDesk take over—auto-follows until receipts are in, then stops. Focus on closing, not chasing.",
+    "seed_id": "fifth_followup_email",
+    "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-06-30",
+    "posted_for": "2026-07-01",
+    "text": "Your expertise is in tidy books, not in wrangling receipts out of clients. Automate the chase with ChaseDesk.",
+    "seed_id": "sunday_night_catchup",
+    "strategy_id": "identity_reframe"
   }
 ]
