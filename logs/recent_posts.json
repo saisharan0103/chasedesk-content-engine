@@ -936,5 +936,26 @@
     "text": "Your expertise is in tidy books, not in wrangling receipts out of clients. Automate the chase with ChaseDesk.",
     "seed_id": "sunday_night_catchup",
     "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-07-01",
+    "posted_for": "2026-07-02",
+    "text": "Before ChaseDesk: Scramble for receipts, inbox chaos.\n\nAfter ChaseDesk: Receipts auto-tracked, inbox peace restored.",
+    "seed_id": "month_end_blocked",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-07-01",
+    "posted_for": "2026-07-02",
+    "text": "ChaseDesk shows you exactly which clients are blocking month-end close, no guesswork needed.",
+    "seed_id": "wrong_document_uploaded",
+    "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-07-01",
+    "posted_for": "2026-07-02",
+    "text": "What's your biggest bottleneck at month-end?\n1. Receipt chasing\n2. Client communication\n3. Transaction review\n4. Final reporting",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "customer_question"
   }
 ]
