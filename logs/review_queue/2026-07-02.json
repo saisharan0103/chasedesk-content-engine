@@ -1,0 +1,35 @@
+[
+  {
+    "slot": 2,
+    "posted_for": "2026-07-03",
+    "scheduled_local": "2026-07-03 20:55 IST",
+    "scheduled_utc": "2026-07-03T15:25:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "one_liner",
+    "segment": "solo_bookkeeper",
+    "seed_id": "receipts_scattered_everywhere",
+    "competitor_id": "autoentry",
+    "hook_type": "category_contrast",
+    "tweet_text": "AutoEntry waits for documents; ChaseDesk solves the real bottleneck by getting receipts sent in the first place.",
+    "character_count": 112,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_003",
+      "pf_004"
+    ],
+    "risk_flags": [
+      "competitor_mentioned"
+    ],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]

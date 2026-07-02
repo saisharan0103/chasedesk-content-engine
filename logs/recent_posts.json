@@ -957,5 +957,19 @@
     "text": "What's your biggest bottleneck at month-end?\n1. Receipt chasing\n2. Client communication\n3. Transaction review\n4. Final reporting",
     "seed_id": "monday_email_queue",
     "strategy_id": "customer_question"
+  },
+  {
+    "date": "2026-07-02",
+    "posted_for": "2026-07-03",
+    "text": "That moment when a client finally replies—sending a crooked WhatsApp photo of a receipt, half missing.\n\nIt's not just chasing them; it's what they send back.",
+    "seed_id": "blurry_whatsapp_photo",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-02",
+    "posted_for": "2026-07-03",
+    "text": "The more bookkeepers we talk to, the clearer it becomes:\n\nClient responsiveness, not accounting, is the bottleneck that delays month-end close.",
+    "seed_id": "bookkeeper_not_debt_collector",
+    "strategy_id": "founder_discovery"
   }
 ]
