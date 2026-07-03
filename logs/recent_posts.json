@@ -971,5 +971,19 @@
     "text": "The more bookkeepers we talk to, the clearer it becomes:\n\nClient responsiveness, not accounting, is the bottleneck that delays month-end close.",
     "seed_id": "bookkeeper_not_debt_collector",
     "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-07-03",
+    "posted_for": "2026-07-04",
+    "text": "Before ChaseDesk: Repeated follow-ups, manual receipt checks, wasted hours.\n\nAfter ChaseDesk: Autopilot receipt chasing, clear client tracking, hours back for real work.",
+    "seed_id": "same_reminder_eleven_times",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-07-03",
+    "posted_for": "2026-07-04",
+    "text": "It’s the end-of-year crunch. Three clients ghosting on missing receipts. Hours lost chasing instead of closing. The true cost? Capacity eaten, deadlines looming.",
+    "seed_id": "year_end_ghosting",
+    "strategy_id": "hidden_cost"
   }
 ]

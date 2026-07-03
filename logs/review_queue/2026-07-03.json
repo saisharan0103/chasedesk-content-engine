@@ -1,0 +1,30 @@
+[
+  {
+    "slot": 2,
+    "posted_for": "2026-07-04",
+    "scheduled_local": "2026-07-04 18:17 IST",
+    "scheduled_utc": "2026-07-04T12:47:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "two_part",
+    "segment": "solo_bookkeeper",
+    "seed_id": "no_one_wants_another_portal",
+    "competitor_id": null,
+    "hook_type": "category_contrast",
+    "tweet_text": "Most receipt tools wait until the receipt arrives. \n\nChaseDesk starts the chase before it's even sent.",
+    "character_count": 102,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]
