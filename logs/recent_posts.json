@@ -985,5 +985,26 @@
     "text": "It’s the end-of-year crunch. Three clients ghosting on missing receipts. Hours lost chasing instead of closing. The true cost? Capacity eaten, deadlines looming.",
     "seed_id": "year_end_ghosting",
     "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-07-04",
+    "posted_for": "2026-07-05",
+    "text": "Talked to more Xero bookkeepers: It's the same story every time. Monday morning starts not with numbers but with nudges to clients. The real bottleneck is waiting on receipts, not the books.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-07-04",
+    "posted_for": "2026-07-05",
+    "text": "Chasing receipts seems small, right?\n\nIt's the hidden cost delaying your month-end close, eating up capacity, and turning weekdays into weekends. Let ChaseDesk handle the follow-ups.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-07-04",
+    "posted_for": "2026-07-05",
+    "text": "Before ChaseDesk: Client chasing cluttering the inbox, missing focus.\n\nAfter ChaseDesk: Auto-detects missing receipts, streamlining month-end close.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "before_after_workflow"
   }
 ]
