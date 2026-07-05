@@ -1006,5 +1006,19 @@
     "text": "Before ChaseDesk: Client chasing cluttering the inbox, missing focus.\n\nAfter ChaseDesk: Auto-detects missing receipts, streamlining month-end close.",
     "seed_id": "monday_email_queue",
     "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-07-05",
+    "posted_for": "2026-07-06",
+    "text": "Looks like a quick task—chasing a missing parking receipt. But hours slip away, client communication stalls, and your focus shifts from closing books.",
+    "seed_id": "bookkeeper_not_debt_collector",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-07-05",
+    "posted_for": "2026-07-06",
+    "text": "Manual follow-ups eating your time?\n\nChaseDesk handles client reminders via email and SMS until receipts arrive, and then stops.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "product_mechanic"
   }
 ]
