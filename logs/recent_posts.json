@@ -1020,5 +1020,26 @@
     "text": "Manual follow-ups eating your time?\n\nChaseDesk handles client reminders via email and SMS until receipts arrive, and then stops.",
     "seed_id": "dashboard_who_is_blocking",
     "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-07-06",
+    "posted_for": "2026-07-07",
+    "text": "\"We'll close the books once you send the rest\"—said three weeks ago. The close is stuck in limbo, waiting on the client.",
+    "seed_id": "close_waiting_three_weeks",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-06",
+    "posted_for": "2026-07-07",
+    "text": "Chatted with a Xero firm: Junior hunts for receipts. Manager chases junior for updates. The real work? Stalled by endless chasing.",
+    "seed_id": "junior_chasing_chain",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-07-06",
+    "posted_for": "2026-07-07",
+    "text": "Looks like a tiny task—getting receipts sorted.\n\nBut each client nudge is time your team can't spend closing books. ChaseDesk automates those follow-ups, freeing up capacity.",
+    "seed_id": "bookkeeper_not_debt_collector",
+    "strategy_id": "hidden_cost"
   }
 ]
