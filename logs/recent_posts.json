@@ -1041,5 +1041,26 @@
     "text": "Looks like a tiny task—getting receipts sorted.\n\nBut each client nudge is time your team can't spend closing books. ChaseDesk automates those follow-ups, freeing up capacity.",
     "seed_id": "bookkeeper_not_debt_collector",
     "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-07-07",
+    "posted_for": "2026-07-08",
+    "text": "How often are your Mondays derailed by chasing missing receipts?\n1. Almost every week\n2. Once a month\n3. Rarely\n4. Never lucky enough to avoid it",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "customer_question"
+  },
+  {
+    "date": "2026-07-07",
+    "posted_for": "2026-07-08",
+    "text": "Receipts scattered in emails? Dropbox? Text messages?\n\nChaseDesk pulls them together with one no-login link. Less chaos, more closing.",
+    "seed_id": "receipts_scattered_everywhere",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-07-07",
+    "posted_for": "2026-07-08",
+    "text": "\"Just use last month's.\" The classic client reply that jeopardizes clean books. It's not just about the numbers, it's about getting what you need in time. ChaseDesk can step in quietly.",
+    "seed_id": "client_says_just_estimate",
+    "strategy_id": "pain_led_story"
   }
 ]
