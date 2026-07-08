@@ -1062,5 +1062,26 @@
     "text": "\"Just use last month's.\" The classic client reply that jeopardizes clean books. It's not just about the numbers, it's about getting what you need in time. ChaseDesk can step in quietly.",
     "seed_id": "client_says_just_estimate",
     "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-08",
+    "posted_for": "2026-07-09",
+    "text": "Receipt chasing feels endless, right?\n\nWith ChaseDesk, it's finally less about chasing and more about closing.",
+    "seed_id": "shoebox_receipts",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-08",
+    "posted_for": "2026-07-09",
+    "text": "Tired of clients groaning at another portal login?\n\nWith ChaseDesk, it's just a link to click, upload, and done. Less friction, more closing time.",
+    "seed_id": "no_one_wants_another_portal",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-07-08",
+    "posted_for": "2026-07-09",
+    "text": "Tired of manually extracting receipts with no end in sight? \n\nChaseDesk OCRs uploaded receipts, helping post clean entries back to Xero.",
+    "seed_id": "same_reminder_eleven_times",
+    "strategy_id": "product_mechanic"
   }
 ]
