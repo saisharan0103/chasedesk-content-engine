@@ -1083,5 +1083,26 @@
     "text": "Tired of manually extracting receipts with no end in sight? \n\nChaseDesk OCRs uploaded receipts, helping post clean entries back to Xero.",
     "seed_id": "same_reminder_eleven_times",
     "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-07-09",
+    "posted_for": "2026-07-10",
+    "text": "When clients finally reply with receipts, what do they usually send?\n1. Clear photos\n2. Crumpled papers\n3. Partial info\n4. \"Use last month’s\" as a workaround",
+    "seed_id": "chasing_is_invisible_work",
+    "strategy_id": "customer_question"
+  },
+  {
+    "date": "2026-07-09",
+    "posted_for": "2026-07-10",
+    "text": "Tired of playing inbox detective to decipher blurry receipt photos?\n\nSend clients one no-login link with ChaseDesk. Click, upload, done. Focus on closing.",
+    "seed_id": "blurry_whatsapp_photo",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-07-09",
+    "posted_for": "2026-07-10",
+    "text": "Before ChaseDesk: Chase clients for receipts, juggle emails, wait. \n\nAfter ChaseDesk: Auto-chases receipts, focus shifts to closing books.",
+    "seed_id": "junior_chasing_chain",
+    "strategy_id": "before_after_workflow"
   }
 ]
