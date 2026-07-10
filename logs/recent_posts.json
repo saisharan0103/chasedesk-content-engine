@@ -1104,5 +1104,26 @@
     "text": "Before ChaseDesk: Chase clients for receipts, juggle emails, wait. \n\nAfter ChaseDesk: Auto-chases receipts, focus shifts to closing books.",
     "seed_id": "junior_chasing_chain",
     "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-07-10",
+    "posted_for": "2026-07-11",
+    "text": "You onboard a new client and all you see are missing receipts. Hours spent chasing, not planning. Bookkeeping shouldn't feel like pulling teeth.",
+    "seed_id": "new_client_paperwork_mess",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-10",
+    "posted_for": "2026-07-11",
+    "text": "Clients dread complex portals. ChaseDesk simplifies: a single link for uploads, no logins needed. Less chasing, more closing for your team.",
+    "seed_id": "no_one_wants_another_portal",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-07-10",
+    "posted_for": "2026-07-11",
+    "text": "Trained for books, not reminders.\n\nLet ChaseDesk handle the chase while you focus on closing the books.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "identity_reframe"
   }
 ]
