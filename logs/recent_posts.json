@@ -1125,5 +1125,26 @@
     "text": "Trained for books, not reminders.\n\nLet ChaseDesk handle the chase while you focus on closing the books.",
     "seed_id": "monday_email_queue",
     "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-07-11",
+    "posted_for": "2026-07-12",
+    "text": "Trained in numbers, trapped by reminders.\n\nLet ChaseDesk handle the follow-ups while you focus on closing those books.",
+    "seed_id": "sunday_night_catchup",
+    "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-07-11",
+    "posted_for": "2026-07-12",
+    "text": "Chasing receipts looks like a minor task, but it's holding back your firm's growth. With ChaseDesk, automate the chase and gain hours back to focus on acquiring more clients.",
+    "seed_id": "firm_at_capacity",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-07-11",
+    "posted_for": "2026-07-12",
+    "text": "That VAT deadline erases all weekend plans when you're stuck chasing missing supplier receipts instead of closing books.",
+    "seed_id": "vat_deadline_missing_invoices",
+    "strategy_id": "pain_led_story"
   }
 ]
