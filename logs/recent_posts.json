@@ -1146,5 +1146,26 @@
     "text": "That VAT deadline erases all weekend plans when you're stuck chasing missing supplier receipts instead of closing books.",
     "seed_id": "vat_deadline_missing_invoices",
     "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-12",
+    "posted_for": "2026-07-13",
+    "text": "\"Please, not another login,\" your client sighs.\n\nChaseDesk gives them a single link: click, upload, done. Less friction, more closing.",
+    "seed_id": "no_one_wants_another_portal",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-07-12",
+    "posted_for": "2026-07-13",
+    "text": "\"Can you resend that receipt?\" A familiar dread as you hit send on another follow-up. Manual reminders eat into team hours. Maybe it's time for autopilot help.",
+    "seed_id": "fifth_followup_email",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-12",
+    "posted_for": "2026-07-13",
+    "text": "Spoke to more Xero firms: It's the same loop. Chase, nudge, wait.\n\nTurns out, the books aren't the problem—it's client responses.",
+    "seed_id": "wrong_document_uploaded",
+    "strategy_id": "founder_discovery"
   }
 ]
