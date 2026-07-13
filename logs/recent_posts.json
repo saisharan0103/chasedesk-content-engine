@@ -1167,5 +1167,26 @@
     "text": "Spoke to more Xero firms: It's the same loop. Chase, nudge, wait.\n\nTurns out, the books aren't the problem—it's client responses.",
     "seed_id": "wrong_document_uploaded",
     "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-07-13",
+    "posted_for": "2026-07-14",
+    "text": "Chasing receipts shouldn't be the main act. Focus on closing books, not chasing paperwork.",
+    "seed_id": "month_end_blocked",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-13",
+    "posted_for": "2026-07-14",
+    "text": "Looks like admin, but chasing receipts is the quiet cost keeping your team from more clients. With ChaseDesk, automate the chase.",
+    "seed_id": "year_end_ghosting",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-07-13",
+    "posted_for": "2026-07-14",
+    "text": "Every Xero bookkeeper knows it: the real delay isn't numbers, it's client responses. They finally send a receipt—but it's for the wrong transaction. ChaseDesk helps stop this loop.",
+    "seed_id": "wrong_document_uploaded",
+    "strategy_id": "founder_discovery"
   }
 ]
