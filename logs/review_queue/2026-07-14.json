@@ -1,0 +1,30 @@
+[
+  {
+    "slot": 2,
+    "posted_for": "2026-07-15",
+    "scheduled_local": "2026-07-15 17:02 IST",
+    "scheduled_utc": "2026-07-15T11:32:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "one_liner",
+    "segment": "firm_owner_2_20_staff",
+    "seed_id": "receipts_scattered_everywhere",
+    "competitor_id": null,
+    "hook_type": "category_contrast",
+    "tweet_text": "Most receipt tools start where the pain begins: after receipts arrive. Meet ChaseDesk—the Xero firm's autopilot for getting them there.",
+    "character_count": 135,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]

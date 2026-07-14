@@ -1188,5 +1188,19 @@
     "text": "Every Xero bookkeeper knows it: the real delay isn't numbers, it's client responses. They finally send a receipt—but it's for the wrong transaction. ChaseDesk helps stop this loop.",
     "seed_id": "wrong_document_uploaded",
     "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-07-14",
+    "posted_for": "2026-07-15",
+    "text": "Client sends a receipt—finally. It's wrong, for the wrong transaction, and yet the follow-up loop continues. Bookkeeping shouldn’t feel like déjà vu.",
+    "seed_id": "blurry_whatsapp_photo",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-14",
+    "posted_for": "2026-07-15",
+    "text": "Before ChaseDesk: Open inbox, ask again, wait, repeat.\n\nAfter ChaseDesk: Auto-follow-ups until receipts arrive. More time for numbers, less time nudging.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "before_after_workflow"
   }
 ]
