@@ -1202,5 +1202,26 @@
     "text": "Before ChaseDesk: Open inbox, ask again, wait, repeat.\n\nAfter ChaseDesk: Auto-follow-ups until receipts arrive. More time for numbers, less time nudging.",
     "seed_id": "dashboard_who_is_blocking",
     "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-07-15",
+    "posted_for": "2026-07-16",
+    "text": "A client receipt scattered across five channels?\n\nChaseDesk offers them one simple link: click, upload, done. Now your team can focus on the numbers.",
+    "seed_id": "receipts_scattered_everywhere",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-07-15",
+    "posted_for": "2026-07-16",
+    "text": "Client sends a receipt, but it’s for the wrong year. The follow-up loop starts over, eating hours that could be spent on closing books.",
+    "seed_id": "wrong_document_uploaded",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-07-15",
+    "posted_for": "2026-07-16",
+    "text": "Before ChaseDesk: Multiple tabs, manual follow-ups, close delays.\n\nAfter ChaseDesk: One dashboard tells you who needs that Monday morning nudge.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "before_after_workflow"
   }
 ]
