@@ -1223,5 +1223,26 @@
     "text": "Before ChaseDesk: Multiple tabs, manual follow-ups, close delays.\n\nAfter ChaseDesk: One dashboard tells you who needs that Monday morning nudge.",
     "seed_id": "dashboard_who_is_blocking",
     "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-07-16",
+    "posted_for": "2026-07-17",
+    "text": "Every bookkeeper knows the loop: chase, nudge, wait.\n\nTurns out, the real delay is client responses.",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-16",
+    "posted_for": "2026-07-17",
+    "text": "Before ChaseDesk: Manual follow-ups, missed client responses, delayed closes.\n\nAfter ChaseDesk: Automated follow-ups, quicker closes.",
+    "seed_id": "firm_at_capacity",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-07-16",
+    "posted_for": "2026-07-17",
+    "text": "Receipt uploaded, but it’s last year’s invoice? ChaseDesk detects these mismatches and helps you close books faster.",
+    "seed_id": "wrong_document_uploaded",
+    "strategy_id": "product_mechanic"
   }
 ]
