@@ -1,0 +1,32 @@
+[
+  {
+    "slot": 0,
+    "posted_for": "2026-07-18",
+    "scheduled_local": "2026-07-18 09:28 IST",
+    "scheduled_utc": "2026-07-18T03:58:00Z",
+    "status": "review_queue",
+    "strategy": "category_contrast",
+    "strategy_name": "Category contrast",
+    "shape": "micro_story",
+    "segment": "firm_owner_2_20_staff",
+    "seed_id": "close_waiting_three_weeks",
+    "competitor_id": "datamolino",
+    "hook_type": "positioning",
+    "tweet_text": "\"Just send the receipt when you can.\" Three weeks go by. No reply.\n\nChaseDesk quietly takes on the chasing, so your team doesn’t have to wait for the past due.",
+    "character_count": 159,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_004"
+    ],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]

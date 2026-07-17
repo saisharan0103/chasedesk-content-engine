@@ -1244,5 +1244,19 @@
     "text": "Receipt uploaded, but it’s last year’s invoice? ChaseDesk detects these mismatches and helps you close books faster.",
     "seed_id": "wrong_document_uploaded",
     "strategy_id": "product_mechanic"
+  },
+  {
+    "date": "2026-07-17",
+    "posted_for": "2026-07-18",
+    "text": "When receipts finally arrive, what's your first reaction?\n1. Relief\n2. Stress from delays\n3. Frustration if incorrect\n4. Happy it’s over",
+    "seed_id": "chasing_is_invisible_work",
+    "strategy_id": "customer_question"
+  },
+  {
+    "date": "2026-07-17",
+    "posted_for": "2026-07-18",
+    "text": "Talked to a bunch of Xero firms this month. The real challenge? It's not the books themselves—it's the waiting game for missing client receipts. ChaseDesk is built to tackle this head-on.",
+    "seed_id": "bookkeeper_not_debt_collector",
+    "strategy_id": "founder_discovery"
   }
 ]
