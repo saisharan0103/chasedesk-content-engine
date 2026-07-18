@@ -1258,5 +1258,26 @@
     "text": "Talked to a bunch of Xero firms this month. The real challenge? It's not the books themselves—it's the waiting game for missing client receipts. ChaseDesk is built to tackle this head-on.",
     "seed_id": "bookkeeper_not_debt_collector",
     "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-07-18",
+    "posted_for": "2026-07-19",
+    "text": "Clients hate portals.\n\nJust send them a link: click, upload, done. With ChaseDesk, that's all it takes for less chasing and more closing.",
+    "seed_id": "shoebox_receipts",
+    "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-07-18",
+    "posted_for": "2026-07-19",
+    "text": "Before ChaseDesk: Manually track missing receipts across emails.\n\nAfter ChaseDesk: ChaseDesk pulls what's needed, freeing you to close faster.",
+    "seed_id": "dashboard_who_is_blocking",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-07-18",
+    "posted_for": "2026-07-19",
+    "text": "What part of receipt chasing takes the most time?\n1. Manual follow-ups\n2. Client reminders\n3. Collating missing documents\n4. Correcting client uploads",
+    "seed_id": "monday_email_queue",
+    "strategy_id": "customer_question"
   }
 ]
