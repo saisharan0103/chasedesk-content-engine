@@ -1279,5 +1279,26 @@
     "text": "What part of receipt chasing takes the most time?\n1. Manual follow-ups\n2. Client reminders\n3. Collating missing documents\n4. Correcting client uploads",
     "seed_id": "monday_email_queue",
     "strategy_id": "customer_question"
+  },
+  {
+    "date": "2026-07-19",
+    "posted_for": "2026-07-20",
+    "text": "Every firm we talk to hits the same snag: It's not the accounting, it's clients delaying the close. With ChaseDesk, automate those follow-ups, leaving bookkeepers free to focus on the numbers.",
+    "seed_id": "close_waiting_three_weeks",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-07-19",
+    "posted_for": "2026-07-20",
+    "text": "You didn't sign up to be a reminder machine.\n\nChaseDesk auto-follows, freeing your time to focus on closing.",
+    "seed_id": "same_reminder_eleven_times",
+    "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-07-19",
+    "posted_for": "2026-07-20",
+    "text": "\"Another login?\" your client hesitates. Offer them a no-login link with ChaseDesk. Click, upload, done. Fewer hurdles, smoother closing.",
+    "seed_id": "no_one_wants_another_portal",
+    "strategy_id": "no_login_link"
   }
 ]
