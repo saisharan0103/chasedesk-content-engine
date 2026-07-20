@@ -1300,5 +1300,19 @@
     "text": "\"Another login?\" your client hesitates. Offer them a no-login link with ChaseDesk. Click, upload, done. Fewer hurdles, smoother closing.",
     "seed_id": "no_one_wants_another_portal",
     "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-07-20",
+    "posted_for": "2026-07-21",
+    "text": "Before ChaseDesk: Open multiple tabs, send reminders, track responses.\n\nAfter ChaseDesk: Automated chases. Clear your desk for more clients.",
+    "seed_id": "junior_chasing_chain",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-07-20",
+    "posted_for": "2026-07-21",
+    "text": "Clients shrug off missing receipts as \"just estimate it.\"\n\nThis casualness isn't harmless; it keeps clean books out of reach.",
+    "seed_id": "client_says_just_estimate",
+    "strategy_id": "pain_led_story"
   }
 ]

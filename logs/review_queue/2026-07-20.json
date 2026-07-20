@@ -1,0 +1,32 @@
+[
+  {
+    "slot": 1,
+    "posted_for": "2026-07-21",
+    "scheduled_local": "2026-07-21 16:09 IST",
+    "scheduled_utc": "2026-07-21T10:39:00Z",
+    "status": "review_queue",
+    "strategy": "soft_waitlist_cta",
+    "strategy_name": "Soft waitlist CTA",
+    "shape": "two_part",
+    "segment": "solo_bookkeeper",
+    "seed_id": "firm_at_capacity",
+    "competitor_id": null,
+    "hook_type": "soft_cta",
+    "tweet_text": "Admin overflow keeping you from taking on more clients?\n\nChaseDesk automates the chase for missing receipts, so you can focus on growth. We're opening access in batches to Xero firms still doing this manually.",
+    "character_count": 209,
+    "quality_passed": true,
+    "needs_human_review": true,
+    "regen_count": 0,
+    "generator": "openai",
+    "source_ids": [
+      "pf_004"
+    ],
+    "risk_flags": [],
+    "failure_reasons": [],
+    "typefully_draft_id": null,
+    "typefully_share_url": null,
+    "x_published_url": null,
+    "decision": "pending",
+    "rejection_reason": null
+  }
+]
