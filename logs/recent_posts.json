@@ -1314,5 +1314,26 @@
     "text": "Clients shrug off missing receipts as \"just estimate it.\"\n\nThis casualness isn't harmless; it keeps clean books out of reach.",
     "seed_id": "client_says_just_estimate",
     "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-21",
+    "posted_for": "2026-07-22",
+    "text": "Before ChaseDesk: New client onboard, backlogged docs, endless reminders.\n\nAfter ChaseDesk: Automated chasing, clean entries, more time for complex tasks.",
+    "seed_id": "new_client_paperwork_mess",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-07-21",
+    "posted_for": "2026-07-22",
+    "text": "Month-end is almost done, but not until those missing receipts are found. The accounting isn't blocking you—it's the client response.",
+    "seed_id": "month_end_blocked",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-07-21",
+    "posted_for": "2026-07-22",
+    "text": "Every 'just need those receipts' email feels like déjà vu. You didn't sign up for this. Bookkeepers deserve more time for numbers, less for nudges.",
+    "seed_id": "same_reminder_eleven_times",
+    "strategy_id": "pain_led_story"
   }
 ]
