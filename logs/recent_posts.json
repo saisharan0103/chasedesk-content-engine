@@ -1335,5 +1335,26 @@
     "text": "Every 'just need those receipts' email feels like déjà vu. You didn't sign up for this. Bookkeepers deserve more time for numbers, less for nudges.",
     "seed_id": "same_reminder_eleven_times",
     "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-22",
+    "posted_for": "2026-07-23",
+    "text": "VAT submissions looming and receipts are AWOL. \n\nThe true blocker? It's not your skills—it's that missing paper trail.",
+    "seed_id": "vat_deadline_missing_invoices",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-22",
+    "posted_for": "2026-07-23",
+    "text": "Ever get a client response with a blurry receipt photo? That’s not uncommon. The books aren’t the bottleneck—client communication is. Let ChaseDesk handle the follow-ups while you concentrate on the numbers.",
+    "seed_id": "blurry_whatsapp_photo",
+    "strategy_id": "founder_discovery"
+  },
+  {
+    "date": "2026-07-22",
+    "posted_for": "2026-07-23",
+    "text": "Chasing receipts on a Sunday night?\n\nSounds like personal time is taking a hit, not the books.",
+    "seed_id": "sunday_night_catchup",
+    "strategy_id": "identity_reframe"
   }
 ]
