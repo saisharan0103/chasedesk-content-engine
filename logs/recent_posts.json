@@ -1356,5 +1356,26 @@
     "text": "Chasing receipts on a Sunday night?\n\nSounds like personal time is taking a hit, not the books.",
     "seed_id": "sunday_night_catchup",
     "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-07-23",
+    "posted_for": "2026-07-24",
+    "text": "Receipt chasing looks like minor admin. Yet every missing receipt means more emails, more phone calls. This invisible work bleeds into the weekend. ChaseDesk automates the chase, giving you weekends back.",
+    "seed_id": "shoebox_receipts",
+    "strategy_id": "hidden_cost"
+  },
+  {
+    "date": "2026-07-23",
+    "posted_for": "2026-07-24",
+    "text": "Spent years mastering accounts, not mastering the art of polite reminders. \n\nWith ChaseDesk, focus on closing, not chasing.",
+    "seed_id": "fifth_followup_email",
+    "strategy_id": "identity_reframe"
+  },
+  {
+    "date": "2026-07-23",
+    "posted_for": "2026-07-24",
+    "text": "The client's shoebox is not a system—it's a time thief.\n\nChaseDesk offers a single link: click, upload, done.",
+    "seed_id": "shoebox_receipts",
+    "strategy_id": "no_login_link"
   }
 ]
