@@ -1377,5 +1377,26 @@
     "text": "The client's shoebox is not a system—it's a time thief.\n\nChaseDesk offers a single link: click, upload, done.",
     "seed_id": "shoebox_receipts",
     "strategy_id": "no_login_link"
+  },
+  {
+    "date": "2026-07-24",
+    "posted_for": "2026-07-25",
+    "text": "Before ChaseDesk: Chase the receipt, then chase the client, then repeat.\n\nAfter ChaseDesk: Automated follow-ups free your team for real bookkeeping work.",
+    "seed_id": "junior_chasing_chain",
+    "strategy_id": "before_after_workflow"
+  },
+  {
+    "date": "2026-07-24",
+    "posted_for": "2026-07-25",
+    "text": "It's year-end. Three clients are still missing a full quarter of receipts. You didn't sign up to chase ghosts; you signed up to close books. This is the real month-end crunch.",
+    "seed_id": "year_end_ghosting",
+    "strategy_id": "pain_led_story"
+  },
+  {
+    "date": "2026-07-24",
+    "posted_for": "2026-07-25",
+    "text": "Client sends a document—finally. It's last year's receipt. The follow-up loop restarts. Bookkeepers are stuck in this cycle, missing their real role: closing books, not chasing docs.",
+    "seed_id": "wrong_document_uploaded",
+    "strategy_id": "founder_discovery"
   }
 ]
